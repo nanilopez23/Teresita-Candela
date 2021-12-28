@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 16px;
   display: -ms-grid;
   display: grid;
@@ -76,8 +76,8 @@ body {
 
 .header {
   width: 100%;
-  min-height: 120vh;
-  background-image: url(../Assets/spacejoy-9M66C_w_ToM-unsplash.jpg);
+  min-height: 100vh;
+  background-image: url(../Assets/pickawood-rwa0Yh38FeA-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -86,10 +86,10 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 0.5fr (1fr)[2];
-      grid-template-rows: 0.5fr repeat(2, 1fr);
+  -ms-grid-rows: 0.5fr 1.4fr (1fr)[2];
+      grid-template-rows: 0.5fr 1.4fr repeat(2, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-row-gap: 8px;
   /*
     &:before{
         content:"";
@@ -106,29 +106,112 @@ body {
 .header .header-heading {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 3 / 3 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 1 / 3 / 4;
 }
 
 .header .header-heading .header-heading__h1 {
-  font-size: 2rem;
+  font-size: 4.2rem;
+  font-weight: bold;
   text-transform: uppercase;
   color: white;
-  padding: 20px;
-  border: solid white 5px;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  word-spacing: .8rem;
+  letter-spacing: 0.5rem;
 }
 
 .header .header-text {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-area: 3 / 1 / 4 / 2;
+  grid-area: 3 / 1 / 5 / 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.3fr (1fr)[3];
+      grid-template-columns: 0.3fr repeat(3, 1fr);
+  -ms-grid-rows: 0.3fr (1fr)[3] 0.3fr;
+      grid-template-rows: 0.3fr repeat(3, 1fr) 0.3fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+
+.header .header-text .header-text__h2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 5 / 2;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-text .header-text__p1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 2 / 3 / 5;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.header .header-text .header-text__p2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 3 / 2 / 4 / 5;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.header .header-text .header-text__p3 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: 4 / 2 / 5 / 5;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 .navegador {
-  background: #FBEAC2;
+  background: white;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,15 +243,36 @@ body {
 }
 
 .navegador .nav-items ul li {
-  margin: 0px 10px;
+  margin: 10px 10px;
 }
 
 .navegador .nav-items ul li a {
   color: rgba(0, 0, 0, 0.514);
   font-weight: 550;
   text-decoration: none;
+  text-transform: uppercase;
   -webkit-transition: .5s ease-out;
   transition: .5s ease-out;
+  /*
+                    display: inline-block;
+                    position: relative;
+                        &:after{
+                        content: "";
+                        position: absolute;
+                        z-index:100;
+                        width: 100%;
+                        height: 4px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: black;
+                        transform: scaleX(0);
+                        transform-origin: bottom right;
+                        transition: transform 0.5s ease-out;
+                        &:hover{
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+                    }*/
 }
 
 .navegador .nav-items ul li a:hover {
@@ -195,7 +299,7 @@ body {
   .navegador .nav-items {
     position: absolute;
     top: 70px;
-    background: #FBEAC2;
+    background: white;
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -216,6 +320,230 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 20px;
+  }
+}
+
+.section-one {
+  background: white;
+  margin: 50px 75px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr (1fr)[2] 0.3fr 1fr 0.2fr;
+      grid-template-columns: 0.2fr repeat(2, 1fr) 0.3fr 1fr 0.2fr;
+  -ms-grid-rows: 0.3fr (1fr)[3] 0.2fr;
+      grid-template-rows: 0.3fr repeat(3, 1fr) 0.2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.section-one .personal-img {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 4 / 3;
+}
+
+.section-one .personal-img img {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.section-one .personal-text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 3 / 3 / 6;
+}
+
+.section-one .personal-text .personal-text__h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.section-one .personal-text .personal-text__p {
+  text-align: center;
+  padding: 0px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.section-one .design-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 3 / 4 / 4;
+  text-align: center;
+}
+
+.section-one .design-1 .design-1__h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.section-one .design-1 .design-1__p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.section-one .design-2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 5 / 4 / 6;
+  text-align: center;
+}
+
+.section-one .design-2 .design-2__h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.section-one .design-2 .design-2__p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.section-one .design-3 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: 4 / 3 / 5 / 6;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section-one .design-3 .design-3__h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.section-one .design-3 .design-3__p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 850px) {
+  .section-one {
+    background: white;
+    margin: 20px 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.2fr (1fr)[2] 0.2fr;
+        grid-template-columns: 0.2fr repeat(2, 1fr) 0.2fr;
+    -ms-grid-rows: 0.3fr 1fr 0.3fr 0.3fr 0.2fr;
+        grid-template-rows: 0.3fr 1fr 0.3fr 0.3fr 0.2fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+  }
+  .section-one .personal-img {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .section-one .personal-img img {
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  .section-one .personal-text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .section-one .personal-text .personal-text__h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .section-one .personal-text .personal-text__p {
+    text-align: center;
+    padding: 0px 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .section-one .design-1 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: center;
+  }
+  .section-one .design-1 .design-1__h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .section-one .design-1 .design-1__p {
+    font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+  }
+  .section-one .design-2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 3 / 4 / 4;
+    text-align: center;
+  }
+  .section-one .design-2 .design-2__h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .section-one .design-2 .design-2__p {
+    font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+  }
+  .section-one .design-3 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: 4 / 2 / 5 / 4;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .section-one .design-3 .design-3__h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .section-one .design-3 .design-3__p {
+    font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
   }
 }
 /*# sourceMappingURL=style.css.map */
