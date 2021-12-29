@@ -6,6 +6,7 @@ let flag = 0;
 const faders = document.querySelectorAll(".fade-in");
 
 
+
 //nav bar
 iconoNavegador.addEventListener("click", ()=>{
     if(flag==0){
