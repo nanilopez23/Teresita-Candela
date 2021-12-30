@@ -61,7 +61,7 @@ body{
         grid-template-columns: 0.3fr repeat(3, 1fr);
         grid-template-rows: 0.3fr repeat(3, 1fr) 0.3fr;
         grid-column-gap: 0px;
-        grid-row-gap: 10px;
+        grid-row-gap: 0px;
         .header-text__h2{
             grid-area: 2 / 1 / 5 / 2;
             font-family: $fontSecondary;
@@ -220,7 +220,7 @@ body{
 
 .section-one{
     background: $white;
-    margin: 50px 75px;
+    margin:auto;
     display: grid;
     grid-template-columns: 0.3fr repeat(3, 1fr) 0.3fr;
     grid-template-rows: 0.3fr 1fr 0.2fr 0fr 1fr 0.3fr;
@@ -228,10 +228,14 @@ body{
     grid-row-gap: 0px;
     .personal-img {
         grid-area: 2 / 2 / 4 / 3;
+        display: flex;
+        justify-content: right;
+        align-items: center;
     img{
-        width: 200px;
-        height: 250px;
-        border-radius: 5px;
+        width: 75%;
+        height: 85%;
+        padding: 3%;
+        border-right: black solid 1px;
     }
     }
     .personal-text{
@@ -241,11 +245,12 @@ body{
             text-transform: capitalize;
             font-family:$fontPrimary ;
             font-weight: 600;
-            text-align: center;
-            padding: 10px 0px;
+            text-align: left;
+            
+            padding: 10px 5px;
         }
         .personal-text__p{
-            text-align: center;
+            text-align: left;
             padding: 0px 40px;
             font-family: $fontPrimary;
             font-weight: 500;
@@ -256,7 +261,7 @@ body{
         height: 300px;
         width: 300px;
         position: relative;
-        left: 5%;
+        left: 18%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -282,7 +287,8 @@ body{
             font-family: $fontSecondary;
             font-size: 1.5rem;
             font-weight: $h3font-weight;
-            text-transform: capitalize; 
+            text-transform: uppercase;
+            font-weight: 550;
         }
         .design-1__p{
             width: 100%;
@@ -338,7 +344,8 @@ body{
             font-family: $fontSecondary;
             font-size: 1.5rem;
             font-weight: $h3font-weight;
-            text-transform: capitalize; 
+            text-transform: uppercase;
+            font-weight: 550;
         }
         .design-2__p{
             width: 100%;
@@ -369,7 +376,7 @@ body{
         height: 300px;
         width: 300px;
         position: relative;
-        right: 5%;
+        right: 18%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -395,7 +402,8 @@ body{
             font-family: $fontSecondary;
             font-size: 1.5rem;
             font-weight: $h3font-weight;
-            text-transform: capitalize; 
+            text-transform: uppercase;
+            font-weight: 550;
         }
         .design-3__p{
             width: 100%;
@@ -435,9 +443,8 @@ body{
         .personal-img {
             grid-area: 2 / 2 / 3 / 3;
         img{
-            width: 200px;
-            height: 250px;
-            border-radius: 5px;
+            width: 75%;
+            height: 85%;
         }
         }
         .personal-text{

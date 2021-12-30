@@ -135,7 +135,7 @@ body {
   -ms-grid-rows: 0.3fr (1fr)[3] 0.3fr;
       grid-template-rows: 0.3fr repeat(3, 1fr) 0.3fr;
   grid-column-gap: 0px;
-  grid-row-gap: 10px;
+  grid-row-gap: 0px;
 }
 
 .header .header-text .header-text__h2 {
@@ -325,7 +325,7 @@ body {
 
 .section-one {
   background: white;
-  margin: 50px 75px;
+  margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.3fr (1fr)[3] 0.3fr;
@@ -342,12 +342,22 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 2 / 2 / 4 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-one .personal-img img {
-  width: 200px;
-  height: 250px;
-  border-radius: 5px;
+  width: 75%;
+  height: 85%;
+  padding: 3%;
+  border-right: black solid 1px;
 }
 
 .section-one .personal-text {
@@ -363,12 +373,12 @@ body {
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  text-align: center;
-  padding: 10px 0px;
+  text-align: left;
+  padding: 10px 5px;
 }
 
 .section-one .personal-text .personal-text__p {
-  text-align: center;
+  text-align: left;
   padding: 0px 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -383,7 +393,7 @@ body {
   height: 300px;
   width: 300px;
   position: relative;
-  left: 5%;
+  left: 18%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,7 +433,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 550;
 }
 
 .section-one .design-1 .design-1__p {
@@ -501,7 +512,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 550;
 }
 
 .section-one .design-2 .design-2__p {
@@ -540,7 +552,7 @@ body {
   height: 300px;
   width: 300px;
   position: relative;
-  right: 5%;
+  right: 18%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,7 +592,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 550;
 }
 
 .section-one .design-3 .design-3__p {
@@ -631,9 +644,8 @@ body {
     grid-area: 2 / 2 / 3 / 3;
   }
   .section-one .personal-img img {
-    width: 200px;
-    height: 250px;
-    border-radius: 5px;
+    width: 75%;
+    height: 85%;
   }
   .section-one .personal-text {
     -ms-grid-row: 2;
