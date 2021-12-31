@@ -337,6 +337,7 @@ body {
   margin: 10% 5%;
   padding: 0%;
   border-top: black solid 1px;
+  border-bottom: black solid 1px;
 }
 
 .section-one .personal-img {
@@ -729,5 +730,106 @@ body {
     font-size: .8rem;
     font-weight: 400;
   }
+}
+
+.section-two {
+  margin: 2% 0%;
+  padding: 0% 3%;
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 1fr;
+      grid-template-columns: 0.5fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border-bottom: black solid 1px;
+}
+
+.section-two .text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-two .text .text__h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+}
+
+.section-two .text .text__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 10%;
+  height: 10%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.171);
+  border: none;
+  margin-top: 10px 0%;
+}
+
+.section-two .text .text__btn:hover {
+  background-color: #FBEAC2;
+  border: black solid 1px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.section-two .text .text__btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.section-two .carousel {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+  height: 500px !important;
+  width: 600px !important;
+  padding: 0% 0% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

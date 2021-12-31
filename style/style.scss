@@ -236,6 +236,7 @@ body{
     margin: 10% 5%;
     padding: 0%;
     border-top: black solid 1px;
+    border-bottom: black solid 1px;
     .personal-img {
         grid-area: 2 / 2 / 4 / 3;
         display: flex;
@@ -528,6 +529,70 @@ body{
 
 // Proyectos 
 
+.section-two{
+    margin: 2% 0%;
+    padding: 0% 3%;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;  
+    border-bottom: black solid 1px; //sacar este borde
+    .text{
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    flex-direction: column;
+
+    .text__h2{
+        font-family: $fontPrimary;
+        font-size: $h1font-size;
+        text-transform: uppercase;
+        font-weight: 500 !important;
+        
+    }
+    .text__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 10%;
+        height: 10%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.171);
+        border: none;
+        margin-top: 10px 0%;
+        &:hover{
+            background-color: $primary;
+            border: black solid 1px;
+            transition: all 500ms ;
+        }
+        a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        color: $black;
+        }
+    }
+    }
+    .carousel{
+        grid-area: 1 / 2 / 2 / 3;
+        height: 500px !important;
+        width: 600px !important;
+        padding: 0% 0% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        
+        
+    }
+}
 
 
 
