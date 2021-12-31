@@ -13,7 +13,7 @@ body{
     font-size: 16px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr repeat(5, 1fr) 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr repeat(4, 1fr) 0.5fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -30,7 +30,7 @@ body{
 ///header
 .header{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url(../Assets/pickawood-rwa0Yh38FeA-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -226,6 +226,9 @@ body{
     grid-template-rows: 0.3fr 1fr 0.2fr 0fr 1fr 0.3fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    margin: 10% 5%;
+    padding: 0%;
+    border-top: black solid 1px;
     .personal-img {
         grid-area: 2 / 2 / 4 / 3;
         display: flex;
@@ -242,9 +245,9 @@ body{
         grid-area: 2 / 3 / 4 / 5; 
         .personal-text__h2{
             font-size: 2rem;
-            text-transform: capitalize;
+            text-transform: uppercase;
             font-family:$fontPrimary ;
-            font-weight: 600;
+            font-weight: 400;
             text-align: left;
             
             padding: 10px 5px;
