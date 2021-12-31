@@ -18,13 +18,19 @@ body{
     grid-row-gap: 0px;
     }
         
-    .navegador { grid-area: 1 / 1 / 2 / 2; }
-    .header { grid-area: 2 / 1 / 3 / 2; }
-    .section-one { grid-area: 3 / 1 / 4 / 2; }
-    .section-two { grid-area: 4 / 1 / 5 / 2; }
-    .section-theree { grid-area: 5 / 1 / 6 / 2; }
-    .section-four { grid-area: 6 / 1 / 7 / 2; }
-    .footer { grid-area: 7 / 1 / 8 / 2; }
+    .navegador { grid-area: 1 / 1 / 2 / 2; 
+        
+    }
+    .header { grid-area: 2 / 1 / 3 / 2;
+        }
+    .section-one { grid-area: 3 / 1 / 4 / 2;
+         }
+    .section-two { grid-area: 4 / 1 / 5 / 2;
+         }
+    .section-theree { grid-area: 5 / 1 / 6 / 2;
+       }
+    .section-four { grid-area: 6 / 1 / 7 / 2;}
+    .footer { grid-area: 7 / 1 / 8 / 2;}
 
 
 ///header
@@ -217,6 +223,7 @@ body{
         
     }
 }
+//About us 
 
 .section-one{
     background: $white;
@@ -518,6 +525,9 @@ body{
         }
     }
 }
+
+// Proyectos 
+
 
 
 
