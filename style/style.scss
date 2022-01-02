@@ -13,7 +13,7 @@ body{
     font-size: 16px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr 0.4fr 0.4fr 1fr 0.5fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -539,7 +539,7 @@ body{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;  
-    border-bottom: black solid 1px; //sacar este borde
+    
     .text{
     grid-area: 1 / 1 / 2 / 2; 
     display: flex;
@@ -593,11 +593,103 @@ body{
         
     }
 }
+//Marcas
 
+.section-theree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: $black;
+    margin: 0;
+    padding: 0;
+    .marcas{
+        margin: 3% 0%;
+        .marcas__h2{
+            color: $white;
+            text-transform: uppercase;
+            font-family: $fontPrimary;
+            font-size: $h3font-size;
+            font-weight: bold;
+        }
+    }
+    .marcas-container{
+        width: 100%;
+        height: 80vh;
+        padding-left: 15%;
+        padding-right: 15%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30%;
+        grid-row-gap: 10px;
+        color: $white;
+    }
+    .marcas-container-1{
+        grid-area: 1 / 1 / 2 / 2;
+        
+    }
+    .marcas-container-2{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .marcas-container-3{
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .marcas-container-4{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .marcas-container-5{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .marcas-container-6{
+        grid-area: 2 / 3 / 3 / 4;
+    }
+}
 
-
-
-
-
+.c-cursor {
+	--size: 30px;
+	position: fixed;
+	width: var(--size);
+	height: var(--size);
+	top: calc(var(--size)/-2);
+	left: calc(var(--size)/-2);
+	transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
+	pointer-events: none;
+	transition: none;
+	z-index: 11000;
+	will-change: transform;
+	.is-debug &{
+		transition: all 0.2s ease-in-out;
+	}
+	&__inner{
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: $white;
+		border: 1px solid $black;
+		transition: all 0.15s ease-in-out;
+		opacity: 1;
+		transform: scale(1) translateZ(0);
+	}
+    &.is-clicked &__inner{
+        opacity: 0.5;
+    }
+    &.is-hidden &__inner{
+        opacity: 0;
+    }
+    &.is-link-hovered &__inner {
+		transform: scale(0.75) translateZ(0);
+		background-color: var(--color-a);
+	}
+}
+.has-custom-cursor{
+    &,
+    *{
+        cursor: none !important;
+    }
+}
 
 

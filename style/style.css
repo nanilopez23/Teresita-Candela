@@ -12,8 +12,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 0.1fr 0.5fr (1fr)[4] 0.5fr;
-      grid-template-rows: 0.1fr 0.5fr repeat(4, 1fr) 0.5fr;
+  -ms-grid-rows: 0.1fr 0.5fr 1fr 0.4fr 0.4fr 1fr 0.5fr;
+      grid-template-rows: 0.1fr 0.5fr 1fr 0.4fr 0.4fr 1fr 0.5fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -745,7 +745,6 @@ body {
       grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  border-bottom: black solid 1px;
 }
 
 .section-two .text {
@@ -831,5 +830,156 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+}
+
+.section-theree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.section-theree .marcas {
+  margin: 3% 0%;
+}
+
+.section-theree .marcas .marcas__h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-theree .marcas-container {
+  width: 100%;
+  height: 80vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30%;
+  grid-row-gap: 10px;
+  color: white;
+}
+
+.section-theree .marcas-container-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.section-theree .marcas-container-2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.section-theree .marcas-container-3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.section-theree .marcas-container-4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.section-theree .marcas-container-5 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.section-theree .marcas-container-6 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.c-cursor {
+  --size: 30px;
+  position: fixed;
+  width: var(--size);
+  height: var(--size);
+  top: calc(var(--size)/-2);
+  left: calc(var(--size)/-2);
+  -webkit-transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
+          transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
+  pointer-events: none;
+  -webkit-transition: none;
+  transition: none;
+  z-index: 11000;
+  will-change: transform;
+}
+
+.is-debug .c-cursor {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c-cursor__inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  opacity: 1;
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+}
+
+.c-cursor.is-clicked .c-cursor__inner {
+  opacity: 0.5;
+}
+
+.c-cursor.is-hidden .c-cursor__inner {
+  opacity: 0;
+}
+
+.c-cursor.is-link-hovered .c-cursor__inner {
+  -webkit-transform: scale(0.75) translateZ(0);
+          transform: scale(0.75) translateZ(0);
+  background-color: var(--color-a);
+}
+
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
 }
 /*# sourceMappingURL=style.css.map */
