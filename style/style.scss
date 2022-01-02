@@ -613,6 +613,9 @@ body{
             font-family: $fontPrimary;
             font-size: $h3font-size;
             font-weight: bold;
+            &:hover{
+                color: rgb(209, 209, 209);
+            }
         }
     }
     .marcas-container{
@@ -692,4 +695,155 @@ body{
     }
 }
 
+
+
+#sectionFour {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr repeat(2, 1fr) 0.2fr;
+    grid-template-rows: 0.6fr repeat(2, 1fr) 0.3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .s4__heading {grid-area: 1 / 2 / 2 / 4; }
+    .E1 { 
+        grid-area: 2 / 2 / 3 / 3;
+    
+    }
+    .E2 { 
+        grid-area: 2 / 3 / 3 / 4; 
+      
+    }
+    .E3 { 
+        grid-area: 3 / 2 / 4 / 4;
+        
+    }
+
+  
+
+.s4__heading{
+    text-align: center;
+}
+.s4__heading-h3{
+    font-family: $fontPrimary;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+.s4__heading-h2{
+    font-family: $fontPrimary;
+    font-weight: bold;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+@media screen and (max-width:768px){
+    .s4__heading-h2{
+        font-size: 1.5rem;
+    }
+    .s4__heading-h3{
+        font-size: 1rem;
+    }
+}
+ //ver    
+    .evento__item{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        margin: auto auto auto;
+        overflow: hidden;
+        max-width: 530px;
+    }
+    .evento__item__caption {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(33, 37, 41, 0.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .evento__item__caption-content {
+        color: $secondary;
+        margin: auto 2rem 2rem;
+    }
+    .evento__item__caption-content-t1{
+        font-family: $fontSecondary;
+        font-size: 1rem;
+        font-weight: 900;
+        color: $black !important;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .evento__item__caption-content-text {
+        font-family: $fontPrimary;
+        font-weight: 400;
+        color: $black;
+        font-size:$text1-font-size;
+    }
+    .evento__item__img{
+        height: 100% !important;
+        width: 100%;
+    }
+    @media (min-width: 992px) {
+        .evento-item {
+        max-width: none;
+        margin: 0;
+        }
+        .evento__item__caption {
+        transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+        transition: clip-path 0.25s ease-out, background-color 0.7s;
+        transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+        -webkit-clip-path: inset(0px);
+        clip-path: inset(0px);
+        }
+        .evento__item__caption-content {
+        transition: opacity 0.25s;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+        }
+        .evento__item__img{
+        transition: -webkit-clip-path 0.25s ease-out;
+        transition: clip-path 0.25s ease-out;
+        transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+        -webkit-clip-path: inset(-1px);
+        clip-path: inset(-1px);
+        }
+        .evento__item__img{
+            width:100%;
+            height: 300px;
+        }
+        .evento__item:hover .evento__item__img {
+            -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem);
+            }
+            .evento__item:hover .evento__item__caption {
+            background-color:$primary;
+            -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem);
+            }
+        }
+        @media screen and (max-width:768px){
+            #s4 {
+                display: grid;
+                grid-template-columns: 0.3fr 1fr 0.3fr;
+                grid-template-rows: 0.5fr repeat(4, 1fr) 0.2fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                }
+                
+                .s4__heading { grid-area: 1 / 1 / 2 / 5; }
+                .E1 { grid-area: 2 / 2 / 3 / 3; }
+                .E2 { grid-area: 3 / 2 / 4 / 3; }
+                .E3 { grid-area: 4 / 2 / 5 / 3; }
+                .E4 { grid-area: 5 / 2 / 6 / 3; }
+            .evento__item__img{
+                width:100%;
+                height: 100%;
+            }
+    }   
 
