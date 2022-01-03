@@ -13,7 +13,7 @@ body{
     font-size: 16px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr 1fr 0.4fr 0.4fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr 0.4fr 0.4fr 0.9fr 0.5fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -771,7 +771,7 @@ body{
         margin: auto 2rem 2rem;
     }
     .evento__item__caption-content-t1{
-        font-family: $fontSecondary;
+        font-family: $fontFive;
         font-size: 1rem;
         font-weight: 900;
         color: $black !important;
@@ -830,20 +830,73 @@ body{
         @media screen and (max-width:768px){
             #s4 {
                 display: grid;
-                grid-template-columns: 0.3fr 1fr 0.3fr;
-                grid-template-rows: 0.5fr repeat(4, 1fr) 0.2fr;
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.6fr repeat(3, 1fr) 0.3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 100%;
                 }
                 
-                .s4__heading { grid-area: 1 / 1 / 2 / 5; }
+                .s4__heading { grid-area: 1 / 2 / 2 / 3; }
                 .E1 { grid-area: 2 / 2 / 3 / 3; }
                 .E2 { grid-area: 3 / 2 / 4 / 3; }
                 .E3 { grid-area: 4 / 2 / 5 / 3; }
-                .E4 { grid-area: 5 / 2 / 6 / 3; }
             .evento__item__img{
                 width:100%;
                 height: 100%;
             }
     }   
+
+    .footer{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: $black;
+        color: $white;
+        padding: 0% 5% ;
+       .footer-heading{
+        display: flex;
+        justify-content: left;
+        text-align: left;
+            padding:10% 10% 10% 0% ;
+            height: 100%;
+            width: 100%;
+        .footer-heading__h2{
+            font-family: $fontFive;
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 5px;
+            word-spacing: 5%;
+            &:hover{
+                color: rgba(242, 240, 237, 0.7);
+            }
+            }
+        }
+    .footer-text{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer-text-list{
+            list-style: none;
+            padding-left: 5%;
+            border-left: white solid 1px;
+            .footer-text-list__item{
+                font-family: $fontPrimary;
+                font-size: 1.2rem;
+                padding: 5% 0%;
+                span{
+                    font-family:$fontFive ;
+                }
+            }
+        }
+    }
+
+    }
+
+
 
