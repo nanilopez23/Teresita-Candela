@@ -242,12 +242,14 @@ body{
         display: flex;
         justify-content: right;
         align-items: center;
-    img{
+        background-image: url(../Assets/mateus-campos-felipe-ZxdJFgSGQBA-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 75%;
         height: 85%;
         padding: 3%;
         border-right: black solid 1px;
-    }
     }
     .personal-text{
         grid-area: 2 / 3 / 4 / 5; 
@@ -286,7 +288,7 @@ body{
         overflow: hidden;
         padding: 0px 20px;
         &:hover{
-            background: $primarybackground;
+            background: $primary;
             z-index: 15;
             &:hover .design-1__h3{
                 transform:translateY(-80px);
@@ -343,7 +345,7 @@ body{
         overflow: hidden;
         padding: 0px 20px;
         &:hover{
-            background: $primarybackground;
+            background: $primary;
             z-index: 15;
             &:hover .design-2__h3{
                 transform:translateY(-80px);
@@ -401,7 +403,7 @@ body{
         overflow: hidden;
         padding: 0px 20px;
         &:hover{
-            background: $primarybackground;
+            background: $primary;
             z-index: 15;
             &:hover .design-3__h3{
                 transform:translateY(-80px);
@@ -481,7 +483,7 @@ body{
             
             .design-1__h3{
                 font-family: $fontSecondary;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: $h3font-weight;
                 text-transform: capitalize;   
             }
@@ -497,7 +499,7 @@ body{
             text-align: center;
             .design-2__h3{
                 font-family: $fontSecondary;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: $h3font-weight;
                 text-transform: capitalize;   
             }
@@ -514,7 +516,7 @@ body{
             margin-top: 10px;
             .design-3__h3{
                 font-family: $fontSecondary;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: $h3font-weight;
                 text-transform: capitalize;
             }
@@ -893,6 +895,26 @@ body{
                     font-family:$fontFive ;
                 }
             }
+        }
+    }
+    .footer-button{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0% 5% 5% 0%;
+        button{
+            color: white;
+            padding: 10px;
+            background-color: $black;
+            border-radius: 50%;
+            border: solid white 1px;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                font-size: .8rem;
+            }
+
         }
     }
 

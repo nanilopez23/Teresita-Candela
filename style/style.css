@@ -355,9 +355,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.section-one .personal-img img {
+  background-image: url(../Assets/mateus-campos-felipe-ZxdJFgSGQBA-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 75%;
   height: 85%;
   padding: 3%;
@@ -422,7 +423,7 @@ body {
 }
 
 .section-one .design-1:hover {
-  background: #fffff5;
+  background: #FBEAC2;
   z-index: 15;
 }
 
@@ -501,7 +502,7 @@ body {
 }
 
 .section-one .design-2:hover {
-  background: #fffff5;
+  background: #FBEAC2;
   z-index: 15;
 }
 
@@ -581,7 +582,7 @@ body {
 }
 
 .section-one .design-3:hover {
-  background: #fffff5;
+  background: #FBEAC2;
   z-index: 15;
 }
 
@@ -682,7 +683,7 @@ body {
   }
   .section-one .design-1 .design-1__h3 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: capitalize;
   }
@@ -701,7 +702,7 @@ body {
   }
   .section-one .design-2 .design-2__h3 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: capitalize;
   }
@@ -721,7 +722,7 @@ body {
   }
   .section-one .design-3 .design-3__h3 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: capitalize;
   }
@@ -1267,5 +1268,33 @@ body {
 
 .footer .footer-text .footer-text-list .footer-text-list__item span {
   font-family: "Roboto", sans-serif;
+}
+
+.footer .footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0% 5% 5% 0%;
+}
+
+.footer .footer-button button {
+  color: white;
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+  border: solid white 1px;
+}
+
+.footer .footer-button button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: .8rem;
 }
 /*# sourceMappingURL=style.css.map */
