@@ -4,7 +4,7 @@ const imgSections = [...document.querySelectorAll('.img-section')];
 const images= [...document.querySelectorAll('.img')];
 
 images.forEach((image, idx) => {
-    image.style.backgroundImage = `url(./Assets2/${idx + 1}.jpg)`
+    image.style.backgroundImage = `url(./image/${idx + 1}.jpg)`
 })
 
 let isMobile = false;
