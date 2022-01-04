@@ -32,12 +32,6 @@ main{
                 width: 400px;
                 height: 100%;
                 overflow: hidden;
-                filter: grayscale(100%);
-                &:hover{
-                    filter: grayscale(0%);
-                    scale: 105%;
-                    transition: .5s ease-in-out;
-                }
                 .item-text{
                     height: 5%;
                     width: 100%;

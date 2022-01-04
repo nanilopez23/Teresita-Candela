@@ -43,16 +43,6 @@ main .slider .slider-inner .item {
   width: 400px;
   height: 100%;
   overflow: hidden;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-main .slider .slider-inner .item:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-  scale: 105%;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
 }
 
 main .slider .slider-inner .item .item-text {
