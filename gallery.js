@@ -51,4 +51,3 @@ function animateImage(){
 
 init();
 animate();
-

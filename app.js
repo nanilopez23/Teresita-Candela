@@ -1,8 +1,10 @@
 //variables
-let iconoNavegador = document.querySelector(".icono-navegador");
-let navItems = document.querySelector(".nav-items");
-let icon = document.querySelector(".icono-navegador i");
-let flag = 0;
+//var navbar
+const menuOpen = document.querySelector(".menu-open");
+const menuClose = document.querySelector(".menu-close");
+const nav = document.querySelector(".nav");
+const navLink = document.querySelectorAll(".nav-link");
+
 const faders = document.querySelectorAll(".fade-in");
 const cursorEl = document.querySelector(".js-cursor");
 const isClickedClass = "is-clicked";
@@ -67,18 +69,19 @@ addEventListener();
 document.body.classList.add(hascustomCursorClass);
 
 }
-//nav bar
-iconoNavegador.addEventListener("click", ()=>{
-    if(flag==0){
-        navItems.className = ("nav-items show-nav-items");
-        icon.className = ("fas fa-times");
-        flag = 1;
-    }else{
-        navItems.className = ("nav-items");
-        icon.className = ("fas fa-bars");
-        flag = 0;
-    }
-})
+
+//navbar
+
+menuOpen.addEventListener("click", menuTog);
+menuClose.addEventListener("click", menuTog);
+
+navLink.forEach((link) => {
+  link.addEventListener("click", menuTog);
+});
+
+function menuTog(e){
+  nav.classList.toggle("active")
+};
 
 //fade in 
 

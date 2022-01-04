@@ -83,70 +83,119 @@ main .slider .slider-inner .item .img {
 body {
   font-family: "Montserrat", sans-serif !important;
   font-size: 16px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 0.1fr 0.5fr 1fr 0.4fr 0.4fr 0.9fr 0.5fr;
-      grid-template-rows: 0.1fr 0.5fr 1fr 0.4fr 0.4fr 0.9fr 0.5fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.navegador {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
+.menu-open {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
-.header {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 1 / 3 / 2;
+.menu-open span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 2px;
+  background: black;
+  margin-top: 3px;
 }
 
-.section-one {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 1 / 4 / 2;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid black;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 1000;
 }
 
-.section-two {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 4 / 1 / 5 / 2;
+.nav ul {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
 }
 
-.section-theree {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 5 / 1 / 6 / 2;
+.nav ul li {
+  margin-top: 2rem;
+  list-style: none;
 }
 
-.section-four {
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 6 / 1 / 7 / 2;
+.nav ul li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
-.footer {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 7 / 1 / 8 / 2;
+.nav ul li a:hover {
+  font-weight: 500;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav.active {
+  position: fixed;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.menu-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.menu-close span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 2px;
+  background: black;
+}
+
+.menu-close :nth-child(1) {
+  position: absolute;
+  left: -2px;
+  top: 7px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-close :nth-child(2) {
+  position: absolute;
+  left: -2px;
+  top: 7px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .header {
@@ -283,119 +332,6 @@ body {
 
 .fade-in.appear {
   opacity: 1;
-}
-
-.navegador {
-  background: white;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.navegador .logo {
-  margin: 0 25px;
-}
-
-.navegador .logo img {
-  width: 200px;
-}
-
-.navegador .nav-items {
-  margin-left: auto;
-}
-
-.navegador .nav-items ul {
-  margin: 10px 10px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navegador .nav-items ul li {
-  margin: 10px 10px;
-}
-
-.navegador .nav-items ul li a {
-  color: rgba(0, 0, 0, 0.514);
-  font-weight: 550;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: .5s ease-out;
-  transition: .5s ease-out;
-  /*
-                    display: inline-block;
-                    position: relative;
-                        &:after{
-                        content: "";
-                        position: absolute;
-                        z-index:100;
-                        width: 100%;
-                        height: 4px;
-                        bottom: 0;
-                        left: 0;
-                        background-color: black;
-                        transform: scaleX(0);
-                        transform-origin: bottom right;
-                        transition: transform 0.5s ease-out;
-                        &:hover{
-                            transform: scaleX(1);
-                            transform-origin: bottom left;
-                        }
-                    }*/
-}
-
-.navegador .nav-items ul li a:hover {
-  color: black;
-}
-
-.navegador .icono-navegador {
-  color: black;
-  margin: 0px 25px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-  margin-left: auto;
-}
-
-.show-nav-items {
-  height: 100% !important;
-}
-
-@media screen and (max-width: 750px) {
-  .navegador .icono-navegador {
-    display: block;
-  }
-  .navegador .nav-items {
-    position: absolute;
-    top: 70px;
-    background: white;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: .5s ease-out;
-    transition: .5s ease-out;
-  }
-  .navegador .nav-items ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .navegador .nav-items ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 20px;
-  }
 }
 
 .section-one {
@@ -1087,7 +1023,7 @@ body {
 }
 
 #sectionFour {
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   display: -ms-grid;
   display: grid;
