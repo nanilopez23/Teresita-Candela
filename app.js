@@ -108,5 +108,3 @@ const appearOptions = {
   });
   
 
-  
-

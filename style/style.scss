@@ -576,7 +576,26 @@ body{
         text-transform: uppercase;
         font-weight: bold;
         text-decoration: none;
-        color: $black;
+        color: $black; 
+        position: relative;
+        &::after{
+            content: " ";
+            width: 0px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transition: all .5s;
+            will-change: width;
+        }
+        &:hover::after{
+            width: 100%;
+            right: 0;
+        }
+        i{
+            padding: 0px 7px;
+        }
         }
     }
     }
@@ -861,16 +880,16 @@ body{
         display: flex;
         justify-content: left;
         text-align: left;
-            padding:10% 10% 10% 0% ;
+            padding:15% 10% 10% 0% ;
             height: 100%;
             width: 100%;
         .footer-heading__h2{
             font-family: $fontFive;
-            font-size: 5rem;
+            font-size: 3.5rem;
             text-transform: uppercase;
             font-weight: 300;
             letter-spacing: 5px;
-            word-spacing: 5%;
+            word-spacing: 7%;
             &:hover{
                 color: rgba(242, 240, 237, 0.7);
             }
@@ -902,16 +921,22 @@ body{
         align-items: flex-end;
         padding: 0% 5% 5% 0%;
         button{
+            
             color: white;
             padding: 10px;
             background-color: $black;
             border-radius: 50%;
             border: solid white 1px;
             a{
+                display: flex;
+                padding: 7px 0px;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: white;
                 font-size: .8rem;
+                i {
+                    padding: 10%;
+                }
             }
 
         }
