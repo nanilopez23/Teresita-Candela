@@ -267,6 +267,10 @@ header {
   position: absolute;
   bottom: 0;
   left: 12%;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .menu-toggle {
