@@ -1,9 +1,9 @@
 //variables
 //var navbar
-const menuOpen = document.querySelector(".menu-open");
-const menuClose = document.querySelector(".menu-close");
-const nav = document.querySelector(".nav");
-const navLink = document.querySelectorAll(".nav-link");
+let menuToggle = document.querySelector(".menu-toggle");
+let menuClose = document.querySelector(".menu-close");
+let menu = document.querySelector(".menu");
+let navLinks = Array.from(document.querySelectorAll(".nav-link"));
 
 const faders = document.querySelectorAll(".fade-in");
 const cursorEl = document.querySelector(".js-cursor");
@@ -12,6 +12,28 @@ const isHiddenClass = "is-hidden";
 const isLinkHoveredClass = "is-link-hovered";
 const hascustomCursorClass = "has-custom-cursor";
 
+
+//navbar
+menuToggle.addEventListener("click", openMenu);
+menuClose.addEventListener("click", closeMenu);
+
+function openMenu(){
+  menu.classList.add("active");
+
+  navLinks.forEach((link, idx) => {
+    setTimeout(() => {
+      link.classList.add("active");
+    }, idx * 100)
+  })
+}
+
+function closeMenu(){
+  menu.classList.remove("active");
+
+  setTimeout(()=> {
+    navLinks.forEach(link => link.classList.remove("active"));
+  }, 100)
+}
 
 //revisa si el dispositivo es tactil 
 function isTouchDevice() {
@@ -70,18 +92,7 @@ document.body.classList.add(hascustomCursorClass);
 
 }
 
-//navbar
 
-menuOpen.addEventListener("click", menuTog);
-menuClose.addEventListener("click", menuTog);
-
-navLink.forEach((link) => {
-  link.addEventListener("click", menuTog);
-});
-
-function menuTog(e){
-  nav.classList.toggle("active")
-};
 
 //fade in 
 

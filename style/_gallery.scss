@@ -8,6 +8,127 @@ body{
     background-color: $white;
     overscroll-behavior: none;
 }
+//navegador
+
+header{
+    position: relative;
+    width: 100%;
+    height: 6rem;
+}
+.logo{
+    position: absolute;
+    
+    left: 12%;
+}
+.menu-toggle2{
+    position: fixed;
+    top: 5vh !important;
+    z-index: 10000;
+    left: 3%;
+    width: 2rem;
+    height: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu-toggle2 :nth-child(1){
+        width: 70%;
+        height: 2px;
+        background-color: black;
+        transition: 0.5s;
+    }
+.menu-toggle2:hover span{
+        width: 100%;
+        opacity: 0.5;
+        transition: 0.5s;
+}
+.menu-toggle2 span:nth-child(2){
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+nav{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    z-index: 10000;
+    top: -100vh;
+    background-color: #171717;
+    transition: .2s;
+}
+nav.active{
+    top: 0;
+    transition: .2s;
+}
+.logo-nav{
+    position: relative;
+    color: white;
+    bottom: 0;
+    left: 12%;
+}
+nav ul{
+    position: absolute;
+    left: 12%;
+    top: 20%;
+    height: 55%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-link{
+    position: relative;
+    color: rgb(182, 182, 182) !important;
+    left: 0;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: .5s;
+    opacity: 0;
+}
+.nav-link.active{
+    opacity: 1;
+    transition: .5s;
+    &:hover{
+        color: white !important;
+        left: 10%;
+        transition: 0.5s;
+    }
+}
+.active-link{
+    color: white;
+}
+.menu-close{
+    position: absolute;
+    top: 45vh;
+    left: 2%;
+    width: 2rem;
+    height: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &:hover{
+        opacity: .6;
+    }
+    span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 2px;
+        background-color: white;
+        &:nth-child(1){
+            transform: rotate(45deg);
+        }
+        &:nth-child(2){
+            transform: rotate(-45deg);
+        }
+    }
+}
+
 main{
     position: fixed;
     top: 0;
