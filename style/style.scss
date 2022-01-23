@@ -57,13 +57,14 @@ body{
 header{
     position: relative;
     width: 100%;
-    height: 6rem;
+    height: 3rem;
+    background-color: #191917;
 }
 .logo{
     position: absolute;
     bottom: 0;
     left: 12%;
-        font-family: $fontSecondary;
+        color: $bones;
         font-size: 1.5rem;
         font-weight: bold;
         text-transform: uppercase;
@@ -187,31 +188,35 @@ nav ul{
 .section-cero{
     width: 100%;
     height: 100vh;
-    background-image: url(../Assets/pickawood-rwa0Yh38FeA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 1.4fr repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #8a7c69;
         
     .header-heading {
-        grid-area: 2 / 1 / 3 / 4;
+        margin: auto;
         .header-heading__h1{
-            font-size: 4.2rem;
-            font-weight: bold;
+            font-size: 7.3rem;
+            font-weight: 500;
+            color: #f2f0ed;
             text-transform: uppercase;
             color: $white;
-            background: rgba(0, 0, 0, 0.100);
             text-align: center;
             word-spacing: .8rem;
-            letter-spacing: 0.5rem;   
+            letter-spacing: 0.6rem;   
+        }
+        .header-heading__h2{
+            font-size: 1rem;
+            font-weight: 450;
+            text-transform: uppercase;
+            color: #f2f0ed;
+            text-align: center;
+            word-spacing: .7rem;
+            letter-spacing: .6rem;
         }
     }
-    .header-text { 
+    
+   /* .header-text { 
         grid-area: 3 / 1 / 5 / 2;
         display: grid;
         grid-template-columns: 0.3fr repeat(3, 1fr);
@@ -255,7 +260,7 @@ nav ul{
             color: $white;
         }
         
-    }
+    }*/
     /*
     &:before{
         content:"";
@@ -342,8 +347,9 @@ nav ul{
         overflow: hidden;
         padding: 0px 20px;
         &:hover{
-            background: $primary;
+            background-color: $secondarybackground;
             z-index: 15;
+            color: white;
             &:hover .design-1__h3{
                 transform:translateY(-80px);
                 transition: 400ms ease-in-out;
@@ -399,8 +405,9 @@ nav ul{
         overflow: hidden;
         padding: 0px 20px;
         &:hover{
-            background: $primary;
+            background: $secondarybackground;
             z-index: 15;
+            color: white;
             &:hover .design-2__h3{
                 transform:translateY(-80px);
                 transition: 400ms ease-in-out;
@@ -457,8 +464,9 @@ nav ul{
         overflow: hidden;
         padding: 0px 20px;
         &:hover{
-            background: $primary;
+            background: $secondarybackground;
             z-index: 15;
+            color:white;
             &:hover .design-3__h3{
                 transform:translateY(-80px);
                 transition: 400ms ease-in-out;
@@ -587,7 +595,7 @@ nav ul{
 
 .section-two{
     margin: 2% 0%;
-    padding: 0% 3%;
+    padding: 0% 6%;
     width: 100%;
     height: 100vh;
     display: grid;
@@ -620,7 +628,7 @@ nav ul{
         border: none;
         margin-top: 10px 0%;
         &:hover{
-            background-color: $primary;
+            background-color: $secondarybackground;
             border: black solid 1px;
             transition: all 500ms ;
         }
@@ -726,6 +734,8 @@ nav ul{
     }
 }
 
+//cursor
+
 .c-cursor {
 	--size: 30px;
 	position: fixed;
@@ -746,7 +756,7 @@ nav ul{
 		width: 100%;
 		height: 100%;
 		border-radius: 50%;
-		background-color: $white;
+		background-color: $bones;
 		border: 1px solid $black;
 		transition: all 0.15s ease-in-out;
 		opacity: 1;
@@ -842,14 +852,14 @@ nav ul{
         z-index: 1;
     }
     .evento__item__caption-content {
-        color: $secondary;
+        color: $black;
         margin: auto 2rem 2rem;
     }
     .evento__item__caption-content-t1{
         font-family: $fontFive;
         font-size: 1rem;
         font-weight: 900;
-        color: $black !important;
+        color: $white !important;
         text-transform: uppercase;
         padding: 10px;
     }
@@ -989,6 +999,7 @@ nav ul{
                 text-transform: uppercase;
                 color: white;
                 font-size: .8rem;
+                font-weight: bold;
                 i {
                     padding: 10%;
                 }
