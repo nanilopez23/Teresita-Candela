@@ -10,10 +10,12 @@ body{
 }
 //navegador
 
-header{
+.header-gallery{
     position: relative;
+    z-index: 100;
     width: 100%;
-    height: 6rem;
+    height: 3rem;
+    background-color: #191917;
 }
 .logo{
     position: absolute;
@@ -22,7 +24,7 @@ header{
 }
 .menu-toggle2{
     position: fixed;
-    top: 5vh !important;
+    top: 8.5vh !important;
     z-index: 10000;
     left: 3%;
     width: 2rem;
