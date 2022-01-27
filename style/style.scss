@@ -193,12 +193,12 @@ nav ul{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #bea791;
+    background-color: #BEA791;
         
     .header-heading {
         margin: auto;
         .header-heading__h1{
-            font-size: 7.3rem;
+            font-size: 7rem;
             font-weight: 500;
             color: #f2f0ed;
             text-transform: uppercase;
@@ -208,7 +208,8 @@ nav ul{
             letter-spacing: 0.6rem;   
         }
         .header-heading__h2{
-            font-size: 1rem;
+            font-size: 1.2rem;
+            padding-top: 40px;
             font-weight: 450;
             text-transform: uppercase;
             color: #f2f0ed;
@@ -349,9 +350,10 @@ nav ul{
         overflow: hidden;
         padding: 0px 20px;
         &:hover{
-            background-color: $secondarybackground;
+            background-color:#DCCAB7;
             z-index: 15;
-            color: white;
+            color: black;
+            border-color: white;
             &:hover .design-1__h3{
                 transform:translateY(-80px);
                 transition: 400ms ease-in-out;
@@ -409,7 +411,8 @@ nav ul{
         &:hover{
             background: $secondarybackground;
             z-index: 15;
-            color: white;
+            color: black;
+            border-color: white;
             &:hover .design-2__h3{
                 transform:translateY(-80px);
                 transition: 400ms ease-in-out;
@@ -468,7 +471,8 @@ nav ul{
         &:hover{
             background: $secondarybackground;
             z-index: 15;
-            color:white;
+            color:black;
+            border-color: white;
             &:hover .design-3__h3{
                 transform:translateY(-80px);
                 transition: 400ms ease-in-out;

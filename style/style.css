@@ -488,7 +488,7 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #bea791;
+  background-color: #BEA791;
   /* .header-text { 
         grid-area: 3 / 1 / 5 / 2;
         display: grid;
@@ -552,7 +552,7 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h1 {
-  font-size: 7.3rem;
+  font-size: 7rem;
   font-weight: 500;
   color: #f2f0ed;
   text-transform: uppercase;
@@ -563,7 +563,8 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  padding-top: 40px;
   font-weight: 450;
   text-transform: uppercase;
   color: #f2f0ed;
@@ -682,9 +683,10 @@ nav ul {
 }
 
 .section-one .design-1:hover {
-  background-color: #E3CBB5;
+  background-color: #DCCAB7;
   z-index: 15;
-  color: white;
+  color: black;
+  border-color: white;
 }
 
 .section-one .design-1:hover:hover .design-1__h3 {
@@ -764,7 +766,8 @@ nav ul {
 .section-one .design-2:hover {
   background: #E3CBB5;
   z-index: 15;
-  color: white;
+  color: black;
+  border-color: white;
 }
 
 .section-one .design-2:hover:hover .design-2__h3 {
@@ -845,7 +848,8 @@ nav ul {
 .section-one .design-3:hover {
   background: #E3CBB5;
   z-index: 15;
-  color: white;
+  color: black;
+  border-color: white;
 }
 
 .section-one .design-3:hover:hover .design-3__h3 {
