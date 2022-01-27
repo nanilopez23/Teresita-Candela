@@ -350,7 +350,7 @@ nav ul{
         overflow: hidden;
         padding: 0px 20px;
         &:hover{
-            background-color:#DCCAB7;
+            background-color:$secondarybackground;
             z-index: 15;
             color: black;
             border-color: white;
@@ -805,14 +805,11 @@ nav ul{
     }
     .E2 { 
         grid-area: 2 / 3 / 3 / 4; 
-      
     }
     .E3 { 
         grid-area: 3 / 2 / 4 / 4;
         
     }
-
-  
 
 .s4__heading{
     text-align: center;
