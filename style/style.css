@@ -240,6 +240,13 @@ main .slider .slider-inner .item .img {
   background-position: center;
 }
 
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url("../fonts/NeueMontreal-Medium.woff2") format("woff2"), url("../fonts/NeueMontreal-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -554,8 +561,9 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h1 {
+  font-family: "Lucida Grande" !important;
   font-size: 7rem;
-  font-weight: 500;
+  font-weight: 300 !important;
   color: #f2f0ed;
   text-transform: uppercase;
   color: white;
