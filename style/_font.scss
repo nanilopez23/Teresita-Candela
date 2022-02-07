@@ -8,3 +8,13 @@
 $font-neue-montreal: 'Neue Montreal';
 
 $font-lucida : 'Lucida Grande';
+@font-face {
+    font-family: 'Emberly Black';
+    src: url('../WOFF2/Emberly-Black.woff2') format('woff2'),
+        url('../WOFF2/Emberly-BlackItalic.woff2') format('woff2');
+    //font-weight: 500;
+    font-style: normal;
+}
+$fontEmberlyBlack:'Emberly Black';
+
+$fontEmberlyBlackItalic : 'Emberly Black Italic';

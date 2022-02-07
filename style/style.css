@@ -82,6 +82,7 @@ nav.active {
 }
 
 .logo-nav {
+  font-family: "Poppins", sans-serif;
   position: relative;
   color: white;
   bottom: 0;
@@ -247,6 +248,12 @@ main .slider .slider-inner .item .img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Emberly Black';
+  src: url("../WOFF2/Emberly-Black.woff2") format("woff2"), url("../WOFF2/Emberly-BlackItalic.woff2") format("woff2");
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -286,6 +293,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .intro .logo-header .logo1 {
@@ -323,6 +331,7 @@ header {
   bottom: 0;
   left: 12%;
   color: #f2f0ed;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -497,7 +506,7 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #BEA791;
+  background-color: #171717;
   /* .header-text { 
         grid-area: 3 / 1 / 5 / 2;
         display: grid;
@@ -561,15 +570,14 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h1 {
-  font-family: "Lucida Grande" !important;
-  font-size: 7rem;
+  font-family: "Emberly Black" !important;
+  font-size: 9rem !important;
   font-weight: 300 !important;
-  color: #f2f0ed;
-  text-transform: uppercase;
   color: white;
+  text-transform: uppercase;
   text-align: center;
-  word-spacing: .8rem;
-  letter-spacing: 0.6rem;
+  word-spacing: .8rem !important;
+  letter-spacing: 1rem !important;
 }
 
 .section-cero .header-heading .header-heading__h2 {
@@ -577,7 +585,7 @@ nav ul {
   padding-top: 40px;
   font-weight: 450;
   text-transform: uppercase;
-  color: #f2f0ed;
+  color: white;
   text-align: center;
   word-spacing: .7rem;
   letter-spacing: .6rem;
@@ -649,7 +657,7 @@ nav ul {
   font-size: 2rem;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: bolder;
   text-align: left;
   padding: 10px 5px;
 }
@@ -657,7 +665,7 @@ nav ul {
 .section-one .personal-text .personal-text__p {
   text-align: left;
   padding: 0px 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
@@ -709,8 +717,8 @@ nav ul {
 }
 
 .section-one .design-1 .design-1__h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
   font-weight: 550;
@@ -723,7 +731,7 @@ nav ul {
   left: 0;
   bottom: 0;
   padding: 0px 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: .8rem;
   font-weight: 400;
   overflow: hidden;
@@ -790,8 +798,8 @@ nav ul {
 }
 
 .section-one .design-2 .design-2__h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
   font-weight: 550;
@@ -804,7 +812,7 @@ nav ul {
   left: 0;
   bottom: 0;
   padding: 0px 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: .8rem;
   font-weight: 400;
   overflow: hidden;
@@ -872,8 +880,8 @@ nav ul {
 }
 
 .section-one .design-3 .design-3__h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
   font-weight: 550;
@@ -886,7 +894,7 @@ nav ul {
   left: 0;
   bottom: 0;
   padding: 0px 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: .8rem;
   font-weight: 400;
   overflow: hidden;
@@ -948,7 +956,7 @@ nav ul {
   .section-one .personal-text .personal-text__p {
     text-align: center;
     padding: 0px 40px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
   }
   .section-one .design-1 {
@@ -960,13 +968,13 @@ nav ul {
     text-align: center;
   }
   .section-one .design-1 .design-1__h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 500;
     text-transform: capitalize;
   }
   .section-one .design-1 .design-1__p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: .8rem;
     font-weight: 400;
   }
@@ -979,13 +987,13 @@ nav ul {
     text-align: center;
   }
   .section-one .design-2 .design-2__h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 500;
     text-transform: capitalize;
   }
   .section-one .design-2 .design-2__p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: .8rem;
     font-weight: 400;
   }
@@ -999,13 +1007,13 @@ nav ul {
     margin-top: 10px;
   }
   .section-one .design-3 .design-3__h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 500;
     text-transform: capitalize;
   }
   .section-one .design-3 .design-3__p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: .8rem;
     font-weight: 400;
   }
@@ -1025,7 +1033,7 @@ nav ul {
           justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold !important;
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -1071,6 +1079,8 @@ section {
   font-size: 2.5vw;
   font-weight: 400;
   list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .project-image {
@@ -1505,20 +1515,23 @@ section {
   text-align: left;
   padding: 15% 10% 10% 0%;
   height: 100%;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer .footer-heading .footer-heading__h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 5px;
+  font-weight: 650;
+  letter-spacing: 7px;
   word-spacing: 7%;
 }
 
 .footer .footer-heading .footer-heading__h2:hover {
   color: rgba(242, 240, 237, 0.7);
+  font-weight: 300;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .footer .footer-text {
@@ -1548,7 +1561,8 @@ section {
 }
 
 .footer .footer-text .footer-text-list .footer-text-list__item span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
 
 .footer .footer-button {
@@ -1565,6 +1579,7 @@ section {
 }
 
 .footer .footer-button button {
+  font-family: "Montserrat", sans-serif;
   color: white;
   padding: 10px;
   background-color: #171717;
@@ -1615,7 +1630,7 @@ section {
   height: 100%;
   border-radius: 50%;
   background-color: #f2f0ed;
-  border: 1px solid #171717;
+  border: 1.7px solid #5a5a5a;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   opacity: 1;
