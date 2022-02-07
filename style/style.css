@@ -250,7 +250,7 @@ main .slider .slider-inner .item .img {
 
 @font-face {
   font-family: 'Emberly Black';
-  src: url("../WOFF2/Emberly-Black.woff2") format("woff2"), url("../WOFF2/Emberly-BlackItalic.woff2") format("woff2");
+  src: url("../WOFF2/Emberly-Regular.woff2") format("woff2"), url("../WOFF2/Emberly-BlackItalic.woff2") format("woff2");
   font-style: normal;
 }
 
@@ -508,7 +508,7 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #171717;
+  background-color: #bea791;
   /* .header-text { 
         grid-area: 3 / 1 / 5 / 2;
         display: grid;
@@ -572,7 +572,7 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h1 {
-  font-family: "Emberly Black" !important;
+  font-family: "Emberly Regular" !important;
   font-size: 9rem !important;
   font-weight: 300 !important;
   color: white;
@@ -580,6 +580,13 @@ nav ul {
   text-align: center;
   word-spacing: .8rem !important;
   letter-spacing: 1rem !important;
+}
+
+.section-cero .header-heading .header-heading__h1:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  letter-spacing: .8rem !important;
+  font-weight: 100 !important;
 }
 
 .section-cero .header-heading .header-heading__h2 {

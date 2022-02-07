@@ -200,21 +200,25 @@ nav ul{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: $black;
+    background-color: $header;
 
         
     .header-heading {
         margin: auto;
         .header-heading__h1{
-            font-family: $fontEmberlyBlack!important;
+            font-family: $fontEmberlyRegular!important;
             font-size: 9rem !important;
             font-weight: 300 !important;
             color: $white;
             text-transform: uppercase;
-           
             text-align: center;
             word-spacing: .8rem !important;
             letter-spacing: 1rem !important;
+            &:hover{
+                transition: .5s;
+                letter-spacing: .8rem !important;
+                font-weight: 100 !important;
+            }
           
         }
         .header-heading__h2{
