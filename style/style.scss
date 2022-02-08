@@ -200,7 +200,7 @@ nav ul{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: $header;
+    background-color: rgba(236, 227, 215, 0.822);
 
         
     .header-heading {
@@ -209,7 +209,7 @@ nav ul{
             font-family: $fontEmberlyRegular!important;
             font-size: 9rem !important;
             font-weight: 300 !important;
-            color: $white;
+            color: $black;
             text-transform: uppercase;
             text-align: center;
             word-spacing: .8rem !important;
@@ -223,10 +223,10 @@ nav ul{
         }
         .header-heading__h2{
             font-size: 1.2rem;
+            color: $black;
             padding-top: 40px;
             font-weight: 450;
             text-transform: uppercase;
-            color: $white;
             text-align: center;
             word-spacing: .7rem;
             letter-spacing: .6rem;
@@ -302,57 +302,76 @@ nav ul{
 //About us 
 
 .section-one{
-    width: 90%;
+    width: 100%;
     height: 100%;
     background: $white;
     margin:auto;
-    display: grid;
-    grid-template-columns: 0.3fr repeat(3, 1fr) 0.3fr;
-    grid-template-rows: 0.3fr 1fr 0.2fr 0fr 1fr 0.3fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: 10% 5%;
-    padding: 0%;
-    border-top: black solid 1px;
     border-bottom: black solid 1px;
+    padding-top: 5%;
+}
+    .container-aboutus{
+        display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: .5fr 1.1fr .2fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    
     .personal-img {
-        grid-area: 2 / 2 / 4 / 3;
+        grid-area: 1 / 3 / 4 / 4;
         display: flex;
-        justify-content: right;
         align-items: center;
         background-image: url(../Assets/mateus-campos-felipe-ZxdJFgSGQBA-unsplash.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 75%;
-        height: 85%;
-        padding: 3%;
-        border-right: black solid 1px;
+        width: 70%;
+        height: 90%;
+        
+        
     }
-    .personal-text{
-        grid-area: 2 / 3 / 4 / 5; 
-        .personal-text__h2{
+    .personal-heading{
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .personal-heading__h2{
             font-size: 2rem;
+            width: 100%;
             text-transform: uppercase;
             font-family:$fontPrimary ;
-            font-weight: bolder ;
-            text-align: left;
+            font-weight: medium;
+            text-align: center;
+            color: $black;
+            letter-spacing: 4px;
             
-            padding: 10px 5px;
-        }
-        .personal-text__p{
-            text-align: left;
-            padding: 0px 40px;
-            font-family: $fontSecondary;
-            font-weight: 500;
         }
     }
+    .personal-text{
+        grid-area: 2 / 2 / 3 / 3;
+        .personal-text__p{
+            text-align: left;
+            font-size: medium;
+            width: 70%;
+            padding: 10% 0%;
+            font-family: $fontPrimary;
+            font-weight:bold;
+            letter-spacing: 1px;
+        }
+    }
+    }
+.container-values{
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: .2fr 1fr .1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
     .design-1{
-        grid-area: 5 / 2 / 6 / 3;
+        grid-area: 2 / 1 / 3 / 2;
+        
         height: 250px;
         width: 250px;
         position: relative;
-        left: 33%;
+        left:48%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -408,7 +427,7 @@ nav ul{
         
     }
     .design-2{
-        grid-area: 5 / 3 / 6 / 4;
+        grid-area: 2 / 2 / 3 / 3;
         height: 250px;
         width: 250px;
         position: relative;
@@ -467,11 +486,11 @@ nav ul{
         
     }
     .design-3{
-        grid-area: 5 / 4 / 6 / 5;
+        grid-area: 2 / 3 / 3 / 4;
         height: 250px;
         width: 250px;
         position: relative;
-        right: 33%;
+        right: 48%;
         text-align: center;
         display: flex;
         flex-direction: column;
