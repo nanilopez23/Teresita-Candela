@@ -206,9 +206,9 @@ nav ul{
     .header-heading {
         margin: auto;
         .header-heading__h1{
-            font-family: $fontEmberlyRegular!important;
+            font-family: $fontPrimary!important;
             font-size: 9rem !important;
-            font-weight: 300 !important;
+            font-weight: lighter !important;
             color: $black;
             text-transform: uppercase;
             text-align: center;
@@ -339,10 +339,13 @@ grid-row-gap: 0px;
             width: 100%;
             text-transform: uppercase;
             font-family:$fontPrimary ;
-            font-weight: medium;
+            font-weight: 400;
             text-align: center;
             color: $black;
             letter-spacing: 4px;
+            .personal-heading__h2__span{
+                font-weight: 550;
+            }
             
         }
     }

@@ -572,9 +572,9 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h1 {
-  font-family: "Emberly Regular" !important;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 9rem !important;
-  font-weight: 300 !important;
+  font-weight: lighter !important;
   color: #171717;
   text-transform: uppercase;
   text-align: center;
@@ -672,10 +672,14 @@ nav ul {
   width: 100%;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-weight: medium;
+  font-weight: 400;
   text-align: center;
   color: #171717;
   letter-spacing: 4px;
+}
+
+.container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
+  font-weight: 550;
 }
 
 .container-aboutus .personal-text {
