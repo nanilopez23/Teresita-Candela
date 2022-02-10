@@ -200,7 +200,7 @@ nav ul{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: rgba(236, 227, 215, 0.822);
+    background-color: $header;
 
         
     .header-heading {
@@ -208,16 +208,15 @@ nav ul{
         .header-heading__h1{
             font-family: $fontPrimary!important;
             font-size: 9rem !important;
-            font-weight: lighter !important;
-            color: $black;
+            font-weight: medium !important;
+            color: #ccc1ac;
             text-transform: uppercase;
             text-align: center;
             word-spacing: .8rem !important;
             letter-spacing: 1rem !important;
             &:hover{
-                transition: .5s;
+                transition:all .5s ease-in-out;
                 letter-spacing: .8rem !important;
-                font-weight: 100 !important;
             }
           
         }
