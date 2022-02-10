@@ -687,6 +687,13 @@ canvas {
     list-style: none;
     font-family: $fontSecondary;
     font-weight: 500;
+    a{
+        text-decoration: none;
+        color: $black;
+        &:hover{
+            color: $black;
+        }
+    }
   }
   
   .project-image {

@@ -1126,6 +1126,15 @@ section {
   font-weight: 500;
 }
 
+.project-ul__li a {
+  text-decoration: none;
+  color: #171717;
+}
+
+.project-ul__li a:hover {
+  color: #171717;
+}
+
 .project-image {
   opacity: 0%;
   position: absolute;
