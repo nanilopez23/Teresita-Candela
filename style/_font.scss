@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Neue Montreal';
     src: url('../fonts/NeueMontreal-Medium.woff2') format('woff2'),
         url('../fonts/NeueMontreal-Medium.woff') format('woff');
@@ -17,15 +17,14 @@ $font-lucida : 'Lucida Grande';
 }
 $fontEmberlyRegular:'Emberly Regular';
 
-$fontEmberlyBlackItalic : 'Emberly Black Italic';
+$fontEmberlyBlackItalic : 'Emberly Black Italic';*/
 
 @font-face {
-    font-family: 'Helvetica Neun';
-    src: url('../HelveticaNeue-Bold.woff2') format('woff2'),
-        url('../HelveticaNeue-Medium.woff2') format('woff2');
+    font-family: 'Helvetica Now';
+    src: url('../HelveticaNowDisplayXBlk.otf') format('otf');
     //font-weight: 500;
     font-style: normal;
 }
-$fontHelveticaNeueBold:'Helvetica Neue Bold';
+$fontHelveticaNow:'Helvetica Now Display';
 
-$fontHelveticaNeueMedium : 'Helvetica Neue Medium';
+

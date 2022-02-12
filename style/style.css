@@ -241,21 +241,28 @@ main .slider .slider-inner .item .img {
   background-position: center;
 }
 
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url("../fonts/NeueMontreal-Medium.woff2") format("woff2"), url("../fonts/NeueMontreal-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
+/*@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/NeueMontreal-Medium.woff2') format('woff2'),
+        url('../fonts/NeueMontreal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
+$font-neue-montreal: 'Neue Montreal';
 
+$font-lucida : 'Lucida Grande';
 @font-face {
-  font-family: 'Emberly Black';
-  src: url("../WOFF2/Emberly-Regular.woff2") format("woff2"), url("../WOFF2/Emberly-BlackItalic.woff2") format("woff2");
-  font-style: normal;
+    font-family: 'Emberly Black';
+    src: url('../WOFF2/Emberly-Regular.woff2') format('woff2'),
+        url('../WOFF2/Emberly-BlackItalic.woff2') format('woff2');
+    //font-weight: 500;
+    font-style: normal;
 }
+$fontEmberlyRegular:'Emberly Regular';
 
+$fontEmberlyBlackItalic : 'Emberly Black Italic';*/
 @font-face {
-  font-family: 'Helvetica Neun';
+  font-family: 'HelveticaNeue';
   src: url("../HelveticaNeue-Bold.woff2") format("woff2"), url("../HelveticaNeue-Medium.woff2") format("woff2");
   font-style: normal;
 }
@@ -587,7 +594,7 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h1 {
-  font-family: "Helvetica Neue Bold" !important;
+  font-family: "Helvetica Neue Medium" !important;
   font-size: 9rem !important;
   font-weight: medium !important;
   color: #f2f0ed;
