@@ -19,3 +19,13 @@ $fontEmberlyRegular:'Emberly Regular';
 
 $fontEmberlyBlackItalic : 'Emberly Black Italic';
 
+@font-face {
+    font-family: 'Helvetica Neun';
+    src: url('../HelveticaNeue-Bold.woff2') format('woff2'),
+        url('../HelveticaNeue-Medium.woff2') format('woff2');
+    //font-weight: 500;
+    font-style: normal;
+}
+$fontHelveticaNeueBold:'Helvetica Neue Bold';
+
+$fontHelveticaNeueMedium : 'Helvetica Neue Medium';

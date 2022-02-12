@@ -254,6 +254,12 @@ main .slider .slider-inner .item .img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Helvetica Neun';
+  src: url("../HelveticaNeue-Bold.woff2") format("woff2"), url("../HelveticaNeue-Medium.woff2") format("woff2");
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -319,7 +325,6 @@ body {
 
 header {
   position: relative;
-  position: fixed;
   z-index: 100;
   width: 100%;
   height: 3rem;
@@ -508,7 +513,7 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #f5efe1;
+  background-color: #88837c;
   /* .header-text { 
         grid-area: 3 / 1 / 5 / 2;
         display: grid;
@@ -568,14 +573,24 @@ nav ul {
 }
 
 .section-cero .header-heading {
-  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section-cero .header-heading .header-heading__h1 {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Helvetica Neue Bold" !important;
   font-size: 9rem !important;
   font-weight: medium !important;
-  color: #ccc1ac;
+  color: #f2f0ed;
   text-transform: uppercase;
   text-align: center;
   word-spacing: .8rem !important;
