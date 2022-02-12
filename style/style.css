@@ -261,12 +261,6 @@ $font-lucida : 'Lucida Grande';
 $fontEmberlyRegular:'Emberly Regular';
 
 $fontEmberlyBlackItalic : 'Emberly Black Italic';*/
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../HelveticaNeue-Bold.woff2") format("woff2"), url("../HelveticaNeue-Medium.woff2") format("woff2");
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -594,9 +588,9 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h1 {
-  font-family: "Helvetica Neue Medium" !important;
+  font-family: Arial, Helvetica, sans-serif !important;
   font-size: 9rem !important;
-  font-weight: medium !important;
+  font-weight: 400 !important;
   color: #f2f0ed;
   text-transform: uppercase;
   text-align: center;
@@ -611,6 +605,7 @@ nav ul {
 }
 
 .section-cero .header-heading .header-heading__h2 {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   color: #212121;
   padding-top: 40px;
@@ -692,14 +687,15 @@ nav ul {
   font-size: 2rem;
   width: 100%;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
   text-align: center;
-  color: #212121;
+  color: #808080;
   letter-spacing: 4px;
 }
 
 .container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
+  color: #212121;
   font-weight: 550;
 }
 
@@ -714,8 +710,10 @@ nav ul {
 .container-aboutus .personal-text .personal-text__p {
   text-align: left;
   font-size: medium;
-  width: 70%;
-  padding: 10% 0%;
+  font-size: 1.1rem;
+  width: 90%;
+  padding: 10% 10%;
+  border-left: #171717 solid 1px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
@@ -795,7 +793,7 @@ nav ul {
   left: 0;
   bottom: 0;
   padding: 0px 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: .8rem;
   font-weight: 400;
   overflow: hidden;
@@ -876,7 +874,7 @@ nav ul {
   left: 0;
   bottom: 0;
   padding: 0px 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: .8rem;
   font-weight: 400;
   overflow: hidden;
@@ -958,7 +956,7 @@ nav ul {
   left: 0;
   bottom: 0;
   padding: 0px 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: .8rem;
   font-weight: 400;
   overflow: hidden;
@@ -1100,6 +1098,7 @@ nav ul {
   font-weight: bold !important;
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
+  padding: 5%;
 }
 
 canvas {
@@ -1273,7 +1272,7 @@ section {
 }
 
 .section-theree .marcas {
-  margin: 3% 0%;
+  margin: 8% 0%;
 }
 
 .section-theree .marcas .marcas__h2 {
@@ -1602,7 +1601,6 @@ section {
 
 .footer .footer-heading .footer-heading__h2:hover {
   color: rgba(242, 240, 237, 0.7);
-  font-weight: 300;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }

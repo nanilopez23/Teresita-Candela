@@ -210,9 +210,9 @@ nav ul{
         flex-direction: column;
 
         .header-heading__h1{
-            font-family: $fontHelveticaNeueMedium!important;
+            font-family: Arial, Helvetica, sans-serif!important;
             font-size: 9rem !important;
-            font-weight: medium !important;
+            font-weight: 400!important;
             color: #f2f0ed;
             text-transform: uppercase;
             text-align: center;
@@ -225,6 +225,7 @@ nav ul{
           
         }
         .header-heading__h2{
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 1.2rem;
             color: $black;
             padding-top: 40px;
@@ -341,12 +342,13 @@ grid-row-gap: 0px;
             font-size: 2rem;
             width: 100%;
             text-transform: uppercase;
-            font-family:$fontPrimary ;
-            font-weight: 400;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 300;
             text-align: center;
-            color: $black;
+            color: $gray;
             letter-spacing: 4px;
             .personal-heading__h2__span{
+                color: $black;
                 font-weight: 550;
             }
             
@@ -357,8 +359,10 @@ grid-row-gap: 0px;
         .personal-text__p{
             text-align: left;
             font-size: medium;
-            width: 70%;
-            padding: 10% 0%;
+            font-size: 1.1rem;
+            width: 90%;
+            padding: 10% 10%;
+            border-left: #171717 solid 1px;
             font-family: $fontPrimary;
             font-weight:bold;
             letter-spacing: 1px;
@@ -416,7 +420,7 @@ width: 100%;
             left: 0;
             bottom: 0;
             padding: 0px 20px;
-            font-family: $fontSecondary;
+            font-family: $fontCero;
             font-size: .8rem;
             font-weight: $text1-font-weight;
             overflow: hidden;
@@ -475,7 +479,7 @@ width: 100%;
             left: 0;
             bottom: 0;
             padding: 0px 20px;
-            font-family: $fontSecondary;
+            font-family: $fontCero;
             font-size: .8rem;
             font-weight: $text1-font-weight;
             overflow: hidden;
@@ -535,7 +539,7 @@ width: 100%;
             left: 0;
             bottom: 0;
             padding: 0px 20px;
-            font-family: $fontSecondary;
+            font-family: $fontCero;
             font-size: .8rem;
             font-weight: $text1-font-weight;
             overflow: hidden;
@@ -653,6 +657,7 @@ width: 100%;
     font-weight: bold !important;
     font-size: $h2font-size;
     font-family: $fontPrimary;
+    padding: 5%;
 }
 canvas {
     position: fixed;
@@ -803,7 +808,7 @@ canvas {
     margin: 0;
     padding: 0;
     .marcas{
-        margin: 3% 0%;
+        margin: 8% 0%;
         .marcas__h2{
             color: $white;
             text-transform: uppercase;
@@ -1021,7 +1026,6 @@ canvas {
             word-spacing: 7%;
             &:hover{
                 color: rgba(242, 240, 237, 0.7);
-                font-weight: 300;
                 transition: all .5s ease-in-out;
             }
             }
