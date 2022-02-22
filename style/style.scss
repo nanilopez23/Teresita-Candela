@@ -200,44 +200,51 @@ nav ul{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #88837c;
+    background-color: #ece9e3;
 
         
     .header-heading {
         display: flex;
         text-align: center;
         flex-direction: column;
+        justify-content: center;
+        .header-heading-head{
+            border-top: #d3cdc3 2px solid;
+            border-bottom: #d3cdc3 2px solid;
+            padding: 5%;
+        }
 
         .header-heading__h1{
             text-align: center;
-            font-family: $fontSecondary!important;
+            font-family: $fontSecondary !important;
             font-size: 8rem;
             font-weight: bold;
-            color: #f2f0ed;
+            color: $black;
             text-transform: none;
             text-align: center;
             word-spacing: .8rem !important;
             letter-spacing: .8rem !important;
-            padding: 5%;
-            .header-heading__span{
-                font-weight: lighter;
+            padding: 0%;
+            .header-heading__h1-span{
+                font-weight: 500;
+            }
             }
           
         }
         .header-heading__h2{
             font-family: $fontSecondary;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             color: $black;
-            padding-top: 10px;
+            padding-top: 2.3rem;
             padding-bottom: 50px;
-            font-weight: 450;
+            font-weight: medium;
             text-transform: uppercase;
             text-align: center;
             word-spacing: .7rem;
             letter-spacing: .6rem;
         }
     }
-}
+
 @media screen and (max-width : 850px){
     .header-heading {
         display: flex;
@@ -252,10 +259,6 @@ nav ul{
             text-align: center;
             word-spacing: .5rem !important;
             letter-spacing: .7rem !important;
-            &:hover{
-                transition:all .5s ease-in-out;
-                letter-spacing: .5rem !important;
-            }
           
         }
         .header-heading__h2{

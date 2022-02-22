@@ -507,7 +507,7 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: #88837c;
+  background-color: #ece9e3;
 }
 
 .section-cero .header-heading {
@@ -519,6 +519,15 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-cero .header-heading .header-heading-head {
+  border-top: #d3cdc3 2px solid;
+  border-bottom: #d3cdc3 2px solid;
+  padding: 5%;
 }
 
 .section-cero .header-heading .header-heading__h1 {
@@ -526,25 +535,25 @@ nav ul {
   font-family: "Poppins", sans-serif !important;
   font-size: 8rem;
   font-weight: bold;
-  color: #f2f0ed;
+  color: #212121;
   text-transform: none;
   text-align: center;
   word-spacing: .8rem !important;
   letter-spacing: .8rem !important;
-  padding: 5%;
+  padding: 0%;
 }
 
-.section-cero .header-heading .header-heading__h1 .header-heading__span {
-  font-weight: lighter;
+.section-cero .header-heading .header-heading__h1 .header-heading__h1-span {
+  font-weight: 500;
 }
 
-.section-cero .header-heading .header-heading__h2 {
+.section-cero .header-heading__h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #212121;
-  padding-top: 10px;
+  padding-top: 2.3rem;
   padding-bottom: 50px;
-  font-weight: 450;
+  font-weight: medium;
   text-transform: uppercase;
   text-align: center;
   word-spacing: .7rem;
@@ -573,11 +582,6 @@ nav ul {
     text-align: center;
     word-spacing: .5rem !important;
     letter-spacing: .7rem !important;
-  }
-  .header-heading .header-heading__h1:hover {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    letter-spacing: .5rem !important;
   }
   .header-heading .header-heading__h2 {
     font-size: 1rem;
@@ -805,7 +809,7 @@ nav ul {
 }
 
 .container-values .design-1:hover {
-  background-color: #fff4de;
+  background-color: #f9f2ed;
   z-index: 15;
   color: black;
   border-color: white;
@@ -887,7 +891,7 @@ nav ul {
 }
 
 .container-values .design-2:hover {
-  background: #fff4de;
+  background: #f9f2ed;
   z-index: 15;
   color: black;
   border-color: white;
@@ -969,7 +973,7 @@ nav ul {
 }
 
 .container-values .design-3:hover {
-  background: #fff4de;
+  background: #f9f2ed;
   z-index: 15;
   color: black;
   border-color: white;
@@ -1122,7 +1126,7 @@ nav ul {
     padding: 0px 20px;
   }
   .container-values .design-1:hover {
-    background-color: #fff4de;
+    background-color: #f9f2ed;
     z-index: 15;
     color: black;
     border-color: white;
@@ -1172,7 +1176,7 @@ nav ul {
     padding: 0px 20px;
   }
   .container-values .design-2:hover {
-    background: #fff4de;
+    background: #f9f2ed;
     z-index: 15;
     color: black;
     border-color: white;
@@ -1225,7 +1229,7 @@ nav ul {
     padding: 0px 20px;
   }
   .container-values .design-3:hover {
-    background: #fff4de;
+    background: #f9f2ed;
     z-index: 15;
     color: black;
     border-color: white;
@@ -1697,7 +1701,7 @@ section {
     clip-path: inset(2rem);
   }
   .evento__item:hover .evento__item__caption {
-    background-color: #fff4de;
+    background-color: #f9f2ed;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
