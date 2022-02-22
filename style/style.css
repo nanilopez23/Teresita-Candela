@@ -1829,13 +1829,17 @@ section {
 
 .footer .footer-text .footer-text-list .footer-text-list__item {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 5% 0%;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
 }
 
 .footer .footer-text .footer-text-list .footer-text-list__item span {
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
+  text-transform: none;
+  letter-spacing: .1rem;
 }
 
 .footer .footer-button {
