@@ -363,7 +363,7 @@ header {
 .menu-toggle :nth-child(1) {
   width: 70%;
   height: 2px;
-  background-color: white;
+  background-color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -378,7 +378,7 @@ header {
 .menu-toggle span:nth-child(2) {
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: black;
 }
 
 nav {
@@ -1330,7 +1330,7 @@ section {
   position: relative;
   border-bottom: 1px solid #212121;
   cursor: pointer;
-  padding-top: 5%;
+  padding-top: 7%;
   font-size: 2.5vw;
   font-weight: 400;
   list-style: none;
