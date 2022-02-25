@@ -341,6 +341,15 @@ header {
   font-weight: 500;
 }
 
+@media screen and (max-width: 720px) {
+  .logo {
+    font-size: 1rem;
+  }
+  header {
+    height: 2rem;
+  }
+}
+
 .menu-toggle {
   position: fixed;
   top: 45vh;
@@ -363,12 +372,14 @@ header {
 @media screen and (max-width: 915px) {
   .menu-toggle {
     top: 15vh;
+    width: 1.5rem;
   }
 }
 
 @media screen and (max-width: 750px) {
   .menu-toggle {
     top: 10vh;
+    width: 1rem;
   }
 }
 
@@ -605,7 +616,7 @@ nav ul {
     padding: 10% 5% 13% 5%;
   }
   .header-heading .header-heading-head {
-    padding: 5% 3%;
+    padding: 10% 10%;
   }
   .header-heading .header-heading__h1 {
     font-size: 5rem !important;
@@ -632,7 +643,37 @@ nav ul {
     padding: 10% 5% 13% 5%;
   }
   .header-heading .header-heading-head {
-    padding: 10% 3% !important;
+    padding: 5% 3% !important;
+  }
+  .header-heading .header-heading__h1 {
+    font-size: 3rem !important;
+    font-weight: bold;
+    word-spacing: .3rem !important;
+    letter-spacing: .3rem !important;
+  }
+  .header-heading .header-heading__h1 .header-heading__h1-span {
+    font-weight: 500;
+  }
+  .header-heading__h2 {
+    width: 100vw;
+    font-size: .7rem !important;
+    color: #212121;
+    text-align: center;
+    padding-top: 3.5em;
+    padding-bottom: 50px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    word-spacing: .4rem;
+    letter-spacing: .3rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header-heading {
+    padding: 20% 5% 13% 5%;
+  }
+  .header-heading .header-heading-head {
+    padding: 5% 3% !important;
   }
   .header-heading .header-heading__h1 {
     font-size: 3rem !important;
