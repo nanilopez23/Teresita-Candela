@@ -1294,11 +1294,15 @@ canvas {
             }
     }   
 
+    //footer
+
     .footer{
         height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         background-color: $black;
         color: $white;
         padding: 0% ;
@@ -1356,9 +1360,11 @@ canvas {
         justify-content: center;
         align-items: flex-end;
         position: relative;
-        top: 75px;
+        top: 8%;
         padding: 0% 5% 5% 0%;
+        
         button{
+            z-index: 23 !important;
             font-family: $fontPrimary;
             color: white;
             padding: 10px;
@@ -1380,9 +1386,162 @@ canvas {
 
         }
     }
-
     }
+@media screen and (max-width: 960px){
+    .footer{
+        height: 850px;
+       .footer-heading{
+        
+        .footer-heading__h2{
+            font-family: $fontPrimary;
+            font-size: 3.2rem !important; 
+            }
+        }
+    .footer-text{
+        margin: auto;
+        .footer-text-list{
+            list-style: none;
+            padding-left: 5%;
+            border-left: white solid 1px;
+            .footer-text-list__item{
+                font-family: $fontPrimary;
+                font-size: .8rem;
+                padding: 5% 0%;
+                letter-spacing: .1rem;
+                text-transform: uppercase;
+                span{
+                    font-family:$fontSecondary ;
+                    font-weight: bolder;
+                    text-transform: none;
+                    letter-spacing: .1rem;
+                }
+            }
+        }
+    }
+    .footer-button{
+        button{
+            a{
+                font-size: .7rem;
+                font-weight: bold;
+                i {
+                    padding: 10%;
+                }
+            }
 
+        }
+    }
+    }
+}
+@media screen and (max-width: 790px){
+    .footer{
+        height: 500px;
+       .footer-heading{
+        .footer-heading__h2{
+            justify-content: left;
+            padding: 0%;
+            width: 75%;
+            font-family: $fontPrimary;
+            font-size: 2.3rem !important; 
+            }
+        }
+    .footer-text{
+        width: 100%;
+        margin: auto;
+        .footer-text-list{
+            .footer-text-list__item{
+                font-size: .7rem;
+                letter-spacing: .1rem;
+                text-transform: uppercase;
+                span{
+                    font-size:.8rem  ;
+                }
+            }
+        }
+    }
+    }
+}
+@media screen and (max-width: 630px){
+    .footer{
+        height: 100vh;
+       .footer-heading{
+        .footer-heading__h2{
+            justify-content: left;
+            padding: 0%;
+            width: 75%;
+            font-family: $fontPrimary;
+            font-size: 2rem !important; 
+            }
+        }
+    .footer-text{
+        width: 100%;
+        margin: auto;
+        .footer-text-list{
+            .footer-text-list__item{
+                font-size: .5rem;
+                letter-spacing: .1rem;
+                text-transform: uppercase;
+                span{
+                    font-size:.6rem  ;
+                }
+            }
+        }
+    }
+    .footer-button{
+        button{
+            a{
+                font-size: .5rem;
+                font-weight: bold;
+                i {
+                    padding: 10%;
+                }
+            }
+
+        }
+    }
+    }
+}
+@media screen and (max-width: 560px){
+    .footer{
+        height: 400px;
+       .footer-heading{
+        .footer-heading__h2{
+            justify-content: left;
+            padding: 0%;
+            width: 75%;
+            font-family: $fontPrimary;
+            font-size: 1.5rem !important; 
+            }
+        }
+    .footer-text{
+        width: 100%;
+        margin: auto;
+        .footer-text-list{
+            .footer-text-list__item{
+                font-size: .4rem;
+                letter-spacing: .1rem;
+                text-transform: uppercase;
+                span{
+                    font-size:.5rem  ;
+                }
+            }
+        }
+    }
+    .footer-button{
+        position: relative;
+        top: 8%;
+        button{
+            a{
+                font-size: .5rem;
+                font-weight: bold;
+                i {
+                    padding: 10%;
+                }
+            }
+
+        }
+    }
+    }
+}
 
     
 //cursor

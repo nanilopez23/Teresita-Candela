@@ -1869,6 +1869,12 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #212121;
   color: white;
   padding: 0%;
@@ -1955,11 +1961,12 @@ section {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
-  top: 75px;
+  top: 8%;
   padding: 0% 5% 5% 0%;
 }
 
 .footer .footer-button button {
+  z-index: 23 !important;
   font-family: "Montserrat", sans-serif;
   color: white;
   padding: 10px;
@@ -1982,6 +1989,143 @@ section {
 
 .footer .footer-button button a i {
   padding: 10%;
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    height: 850px;
+  }
+  .footer .footer-heading .footer-heading__h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.2rem !important;
+  }
+  .footer .footer-text {
+    margin: auto;
+  }
+  .footer .footer-text .footer-text-list {
+    list-style: none;
+    padding-left: 5%;
+    border-left: white solid 1px;
+  }
+  .footer .footer-text .footer-text-list .footer-text-list__item {
+    font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
+    padding: 5% 0%;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+  .footer .footer-text .footer-text-list .footer-text-list__item span {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    text-transform: none;
+    letter-spacing: .1rem;
+  }
+  .footer .footer-button button a {
+    font-size: .7rem;
+    font-weight: bold;
+  }
+  .footer .footer-button button a i {
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .footer {
+    height: 500px;
+  }
+  .footer .footer-heading .footer-heading__h2 {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 0%;
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.3rem !important;
+  }
+  .footer .footer-text {
+    width: 100%;
+    margin: auto;
+  }
+  .footer .footer-text .footer-text-list .footer-text-list__item {
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+  .footer .footer-text .footer-text-list .footer-text-list__item span {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .footer {
+    height: 100vh;
+  }
+  .footer .footer-heading .footer-heading__h2 {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 0%;
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem !important;
+  }
+  .footer .footer-text {
+    width: 100%;
+    margin: auto;
+  }
+  .footer .footer-text .footer-text-list .footer-text-list__item {
+    font-size: .5rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+  .footer .footer-text .footer-text-list .footer-text-list__item span {
+    font-size: .6rem;
+  }
+  .footer .footer-button button a {
+    font-size: .5rem;
+    font-weight: bold;
+  }
+  .footer .footer-button button a i {
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer {
+    height: 400px;
+  }
+  .footer .footer-heading .footer-heading__h2 {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 0%;
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem !important;
+  }
+  .footer .footer-text {
+    width: 100%;
+    margin: auto;
+  }
+  .footer .footer-text .footer-text-list .footer-text-list__item {
+    font-size: .4rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+  .footer .footer-text .footer-text-list .footer-text-list__item span {
+    font-size: .5rem;
+  }
+  .footer .footer-button {
+    position: relative;
+    top: 8%;
+  }
+  .footer .footer-button button a {
+    font-size: .5rem;
+    font-weight: bold;
+  }
+  .footer .footer-button button a i {
+    padding: 10%;
+  }
 }
 
 .c-cursor {
