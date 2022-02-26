@@ -659,6 +659,68 @@ margin: auto;
        
     }
 }
+// meadia query about us 
+@media screen and (max-width:680px){
+    .container-aboutus{
+    
+    .personal-img {
+        width: 85%;
+        height: 85%;
+    }
+    .personal-heading{
+        grid-area: 1 / 1 / 2 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .personal-heading__h2{
+            font-size: 2rem;
+            .personal-heading__h2__span{
+                color: $black;
+                font-weight: 550;
+            }
+            
+        }
+    }
+    .personal-text{
+        grid-area: 2 / 1 / 4 / 3;
+        .personal-text__p{
+            font-size: 1rem;
+           
+        }
+    }
+    }
+}
+
+@media screen and (max-width:420px){
+    .container-aboutus{
+    
+        .personal-img {
+            width: 85%;
+            height: 85%;
+        }
+        .personal-heading{
+            grid-area: 1 / 1 / 2 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .personal-heading__h2{
+                font-size: 1.3rem;
+                .personal-heading__h2__span{
+                    color: $black;
+                    font-weight: 550;
+                }
+                
+            }
+        }
+        .personal-text{
+            grid-area: 2 / 1 / 4 / 3;
+            .personal-text__p{
+                font-size: .8rem;
+               
+            }
+        }
+        }
+}
 
 
 // Proyectos 
@@ -1277,7 +1339,7 @@ canvas {
             padding: 0%;
             width: 75%;
             font-family: $fontPrimary;
-            font-size: 1rem !important; 
+            font-size: 1.1rem !important; 
             }
         }
     .footer-text{
