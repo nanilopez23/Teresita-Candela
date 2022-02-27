@@ -833,8 +833,9 @@ nav ul {
   grid-area: 2 / 1 / 3 / 2;
   height: 300px;
   width: 300px;
+  margin: auto;
   position: relative;
-  left: 45%;
+  left: 30%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -855,7 +856,7 @@ nav ul {
   border-style: solid;
   z-index: 5;
   overflow: hidden;
-  padding: 0px 20px;
+  padding: 0px 0px;
 }
 
 .container-values .design-1:hover {
@@ -997,8 +998,9 @@ nav ul {
   grid-area: 2 / 3 / 3 / 4;
   height: 300px;
   width: 300px;
+  margin: auto;
   position: relative;
-  right: 20%;
+  right: 30%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1019,7 +1021,7 @@ nav ul {
   border-style: solid;
   z-index: 5;
   overflow: hidden;
-  padding: 0px 20px;
+  padding: 0px 0px;
 }
 
 .container-values .design-3:hover {
@@ -1148,6 +1150,51 @@ nav ul {
   }
   .container-aboutus .personal-text .personal-text__p {
     font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container-aboutus {
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    height: 350px;
+  }
+  .container-aboutus .personal-img {
+    width: 100%;
+    height: 50%;
+  }
+  .container-aboutus .personal-heading {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 1 / 2 / 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-aboutus .personal-heading .personal-heading__h2 {
+    font-size: 1rem;
+  }
+  .container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
+    color: #212121;
+    font-weight: 550;
+  }
+  .container-aboutus .personal-text {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 1 / 4 / 3;
+  }
+  .container-aboutus .personal-text .personal-text__p {
+    font-size: .5rem;
   }
 }
 
