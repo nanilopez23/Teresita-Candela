@@ -1348,6 +1348,110 @@ margin: auto;
           }
       }
 }
+@media screen and (max-width:515px){
+    .container-values{
+        width: 100%;
+        margin: auto;
+          .design-1{
+              grid-area: 2 / 1 / 3 / 2;
+              height: 100px;
+              width: 100px;
+              left: 13%;
+              &:hover{
+                background: $secondarybackground;
+                z-index: 15;
+                color: black;
+                border-color: white;
+                &:hover .design-1__h3{
+                    transform:translateY(-30px);
+                    transition: 400ms ease-in-out;
+                } 
+
+                }
+              .design-1__h3{
+                  font-size: .5rem;
+              }
+              .design-1__p{
+                  width: 100%;
+                  height:60px;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  padding: 0px 10px;
+                  font-family: $fontCero;
+                  font-size: .35rem;
+                  font-weight: $text1-font-weight;
+                  overflow: hidden;
+              }
+              
+          }
+          .design-2{
+              grid-area: 2 / 2 / 3 / 3;
+              height: 100px;
+              width: 100px;
+              &:hover{
+                background: $secondarybackground;
+                z-index: 15;
+                color: black;
+                border-color: white;
+                &:hover .design-2__h3{
+                    transform:translateY(-30px);
+                    transition: 400ms ease-in-out;
+                } 
+
+                }
+              .design-2__h3{
+                  font-size: .5rem;
+              }
+              .design-2__p{
+                  width: 100%;
+                  height:60px;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  padding: 0px 10px;
+                  font-family: $fontCero;
+                  font-size: .35rem;
+                  font-weight: $text1-font-weight;
+                  overflow: hidden;
+              }
+              
+          }
+          .design-3{
+              grid-area: 2 / 3 / 3 / 4;
+              height:100px;
+              width: 100px;
+              right: 13%;
+              &:hover{
+                background: $secondarybackground;
+                z-index: 15;
+                color: black;
+                border-color: white;
+                &:hover .design-3__h3{
+                    transform:translateY(-30px);
+                    transition: 400ms ease-in-out;
+                } 
+
+                }
+              .design-3__h3{
+                  font-size: .5rem;
+              }
+              .design-3__p{
+                  width: 100%;
+                  height:60px;
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  padding: 0px 10px;
+                  font-family: $fontCero;
+                  font-size: .35rem;
+                  font-weight: $text1-font-weight;
+                  overflow: hidden;
+              }
+             
+          }
+      }
+}
 
 @media screen and (max-width:420px){
     .container-aboutus{
@@ -1593,7 +1697,7 @@ canvas {
     margin: 0;
     padding: 0;
     .marcas{
-        margin: 8% 0%;
+        margin: 3% 0%;
         .marcas__h2{
             color: $white;
             text-transform: uppercase;
@@ -1690,7 +1794,9 @@ canvas {
         font-size: 1.5rem !important;
     }
     .marcas-container{
+        height: 90vh;
         grid-column-gap: 15%;
+        grid-row-gap: 5%;
     }
     .marcas-container-1, .marcas-container-2, .marcas-container-3, .marcas-container-4, .marcas-container-5, .marcas-container-6{
         font-size: 1.2rem !important;
