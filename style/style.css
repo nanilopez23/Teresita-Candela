@@ -2560,8 +2560,8 @@ section {
 }
 
 .evento__item {
-  width: 100%;
-  height: 300px;
+  width: 100vw;
+  height: 100%;
   position: relative;
   margin: auto auto auto;
   overflow: hidden;
@@ -2604,7 +2604,7 @@ section {
 
 .evento__item__img {
   height: 100% !important;
-  width: 100%;
+  width: 100% !important;
 }
 
 @media (min-width: 992px) {
