@@ -1951,8 +1951,30 @@ canvas {
             clip-path: inset(2rem);
             }
         }
+@media screen and (max-width:1130px){
+    #sectionFour {
+        height: 200vh;
+        display: grid;
+grid-template-columns: 0.2fr 1fr 0.2fr;
+grid-template-rows: 0.6fr repeat(3, 1fr) 0.3fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 100%;
+height: 100%;
+        }
+        
+        .s4__heading { grid-area: 1 / 2 / 2 / 3; }
+        .E1 { grid-area: 2 / 2 / 3 / 3; }
+        .E2 { grid-area: 3 / 2 / 4 / 3; }
+        .E3 { grid-area: 4 / 2 / 5 / 3; }
+    .evento__item__img{
+        width:100%;
+        height: 100%;
+    }
+}
         @media screen and (max-width:768px){
-            #s4 {
+            #sectionFour {
+                height: 200vh;
                 display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 0.6fr repeat(3, 1fr) 0.3fr;
@@ -1971,6 +1993,60 @@ canvas {
                 height: 100%;
             }
     }   
+@media screen and (max-width:590px){
+    .evento__item{
+        width: 100vw;
+        height: 100%;
+        position: relative;
+        margin: auto auto auto;
+        overflow: hidden;
+        max-width: 450px;
+    }
+}
+@media screen and (max-width:510px){
+    .evento__item{
+        width: 400px;
+        height: 300px;
+        position: relative;
+        margin: auto auto auto;
+        overflow: hidden;
+        max-width: 450px;
+    }
+}
+@media screen and (max-width:470px){
+    .evento__item{
+        width: 300px;
+        height: 200px;
+        position: relative;
+        margin: auto auto auto;
+        overflow: hidden;
+        max-width: 450px;
+    }
+}
+@media screen and (max-width:390px){
+    .evento__item{
+        width: 200;
+        height: 180px;
+        position: relative;
+        margin: auto auto auto;
+        overflow: hidden;
+        max-width: 450px;
+    }
+    .evento__item__caption-content-t1{
+        font-family: $fontFive;
+        font-size: .8rem;
+        font-weight: 900;
+        color: $white !important;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .evento__item__caption-content-text {
+        font-family: $fontPrimary;
+        font-weight: 600;
+        color: $black;
+        font-size: .5rem;
+    }
+}
 
     //footer
 
