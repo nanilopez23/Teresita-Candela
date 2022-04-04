@@ -2049,12 +2049,26 @@ height: 100%;
 }
 @media screen and (max-width:470px){
     .evento__item{
-        width: 300px;
-        height: 200px;
+        width: 320px;
+        height: 220px;
         position: relative;
         margin: auto auto auto;
         overflow: hidden;
         max-width: 450px;
+    }
+    .evento__item__caption-content-t1{
+        font-family: $fontFive;
+        font-size: .9rem;
+        font-weight: 900;
+        color: $white !important;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .evento__item__caption-content-text {
+        font-family: $fontPrimary;
+        font-weight: 600;
+        color: $black;
+        font-size: .7rem;
     }
 }
 @media screen and (max-width:390px){
@@ -2094,6 +2108,7 @@ height: 100%;
         background-color: $black;
         color: $white;
         padding: 0% ;
+        margin:auto;
        .footer-heading{
         display: flex;
         justify-content: center;
@@ -2182,7 +2197,7 @@ height: 100%;
         
         .footer-heading__h2{
             font-family: $fontPrimary;
-            font-size: 3.2rem !important; 
+            font-size: 3.8rem !important; 
             }
         }
     .footer-text{
@@ -2332,19 +2347,19 @@ height: 100%;
 }
 @media screen and (max-width: 460px){
     .footer{
-        height: 400px;
+        height: 100vh;
        .footer-heading{
         .footer-heading__h2{
             justify-content: left;
             padding: 0%;
             width: 75%;
+            margin: auto;
             font-family: $fontPrimary;
             font-size: 1.1rem !important; 
             }
         }
     .footer-text{
         width: 100%;
-        margin: auto;
         .footer-text-list{
             .footer-text-list__item{
                 font-size: .4rem;

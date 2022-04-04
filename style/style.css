@@ -2809,12 +2809,26 @@ section {
 
 @media screen and (max-width: 470px) {
   .evento__item {
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 220px;
     position: relative;
     margin: auto auto auto;
     overflow: hidden;
     max-width: 450px;
+  }
+  .evento__item__caption-content-t1 {
+    font-family: "Roboto", sans-serif;
+    font-size: .9rem;
+    font-weight: 900;
+    color: white !important;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  .evento__item__caption-content-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #212121;
+    font-size: .7rem;
   }
 }
 
@@ -2862,6 +2876,7 @@ section {
   background-color: #212121;
   color: white;
   padding: 0%;
+  margin: auto;
 }
 
 .footer .footer-heading {
@@ -2981,7 +2996,7 @@ section {
   }
   .footer .footer-heading .footer-heading__h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 3.2rem !important;
+    font-size: 3.8rem !important;
   }
   .footer .footer-text {
     margin: auto;
@@ -3114,7 +3129,7 @@ section {
 
 @media screen and (max-width: 460px) {
   .footer {
-    height: 400px;
+    height: 100vh;
   }
   .footer .footer-heading .footer-heading__h2 {
     -webkit-box-pack: left;
@@ -3122,12 +3137,12 @@ section {
             justify-content: left;
     padding: 0%;
     width: 75%;
+    margin: auto;
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem !important;
   }
   .footer .footer-text {
     width: 100%;
-    margin: auto;
   }
   .footer .footer-text .footer-text-list .footer-text-list__item {
     font-size: .4rem;
