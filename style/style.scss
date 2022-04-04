@@ -67,7 +67,7 @@ header{
     z-index: 100;
     width: 100%;
     height: 3rem;
-    background-color: #191917;
+    background-color: $black2;
 }
 
 .logo{
@@ -140,7 +140,7 @@ nav{
     left: 0;
     z-index: 10000;
     top: -100vh;
-    background-color: #171717;
+    background-color:$black2;
     transition: .2s;
 }
 nav.active{
@@ -244,7 +244,7 @@ nav ul{
             font-family: $fontSecondary;
             font-size: 8.5rem;
             font-weight: bold;
-            color: $black;
+            color: $black2;
             text-transform: none;
             text-align: center;
             word-spacing: .8rem;
@@ -1646,90 +1646,7 @@ canvas {
     pointer-events: none;
     user-select: none;
   }
-/*.section-two{
-    margin: 2% 0%;
-    padding: 0% 6%;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;  
-    
-    .text{
-    grid-area: 1 / 1 / 2 / 2; 
-    display: flex;
-    flex-direction: column;
 
-    .text__h2{
-        font-family: $fontPrimary;
-        font-size: $h1font-size;
-        text-transform: uppercase;
-        font-weight: 500 !important;
-        
-    }
-    .text__btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 10%;
-        height: 10%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.171);
-        border: none;
-        margin-top: 10px 0%;
-        &:hover{
-            background-color: $secondarybackground;
-            border: black solid 1px;
-            transition: all 500ms ;
-        }
-        a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-decoration: none;
-        color: $black; 
-        position: relative;
-        &::after{
-            content: " ";
-            width: 0px;
-            height: 2px;
-            background-color: black;
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            transition: all .5s;
-            will-change: width;
-        }
-        &:hover::after{
-            width: 100%;
-            right: 0;
-        }
-        i{
-            padding: 0px 7px;
-        }
-        }
-    }
-    }
-    .carousel{
-        grid-area: 1 / 2 / 2 / 3;
-        height: 500px !important;
-        width: 600px !important;
-        padding: 0% 0% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        
-        
-        
-    }
-}
-*/
 //Marcas
 
 .section-theree{
