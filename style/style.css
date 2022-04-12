@@ -15,7 +15,7 @@ body {
   z-index: 100;
   width: 100%;
   height: 3rem;
-  background-color: #212121;
+  background-color: #101010;
 }
 
 .logo {
@@ -70,7 +70,7 @@ nav {
   left: 0;
   z-index: 10000;
   top: -100vh;
-  background-color: #212121;
+  background-color: #101010;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -281,7 +281,7 @@ body {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: #4a4a4a;
+  background-color: #101010;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -322,7 +322,7 @@ header {
   z-index: 100;
   width: 100%;
   height: 3rem;
-  background-color: #212121;
+  background-color: #101010;
 }
 
 .logo {
@@ -411,7 +411,7 @@ nav {
   left: 0;
   z-index: 10000;
   top: -100vh;
-  background-color: #212121;
+  background-color: #101010;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -559,7 +559,7 @@ nav ul {
   font-family: "Poppins", sans-serif;
   font-size: 8.5rem;
   font-weight: bold;
-  color: #212121;
+  color: #101010;
   text-transform: none;
   text-align: center;
   word-spacing: .8rem;
@@ -574,7 +574,7 @@ nav ul {
 .section-cero .header-heading__h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
-  color: #4a4a4a;
+  color: #212121;
   padding-top: 2.3rem;
   padding-bottom: 50px;
   font-weight: medium;
@@ -603,7 +603,7 @@ nav ul {
   }
   .header-heading__h2 {
     font-size: 1.5rem !important;
-    color: #4a4a4a;
+    color: #212121;
     padding-top: 4rem;
     padding-bottom: 50px;
     word-spacing: .5rem;
@@ -630,7 +630,7 @@ nav ul {
   }
   .header-heading__h2 {
     font-size: 1rem !important;
-    color: #4a4a4a;
+    color: #212121;
     padding-top: 3.5em;
     padding-bottom: 50px;
     word-spacing: .5rem;
@@ -658,7 +658,7 @@ nav ul {
   .header-heading__h2 {
     width: 100%;
     font-size: .8rem !important;
-    color: #4a4a4a;
+    color: #212121;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -697,7 +697,7 @@ nav ul {
   .header-heading__h2 {
     width: 100%;
     font-size: .75rem !important;
-    color: #4a4a4a;
+    color: #212121;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -735,7 +735,7 @@ nav ul {
   .header-heading__h2 {
     width: 100%;
     font-size: .6rem !important;
-    color: #4a4a4a;
+    color: #212121;
     text-align: center;
     padding-top: 3.5em;
     padding-bottom: 50px;
@@ -836,7 +836,7 @@ nav ul {
 }
 
 .container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
-  color: #4a4a4a;
+  color: #212121;
   font-weight: 550;
 }
 
@@ -1353,7 +1353,7 @@ nav ul {
     font-size: 2rem;
   }
   .container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
-    color: #4a4a4a;
+    color: #212121;
     font-weight: 550;
   }
   .container-aboutus .personal-text {
@@ -1517,7 +1517,7 @@ nav ul {
     font-size: 1.2rem;
   }
   .container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
-    color: #4a4a4a;
+    color: #212121;
     font-weight: 550;
   }
   .container-aboutus .personal-text {
@@ -1682,7 +1682,7 @@ nav ul {
     font-size: 1.2rem;
   }
   .container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
-    color: #4a4a4a;
+    color: #212121;
     font-weight: 550;
   }
   .container-aboutus .personal-text {
@@ -2070,7 +2070,7 @@ nav ul {
     font-size: 1.3rem;
   }
   .container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
-    color: #4a4a4a;
+    color: #212121;
     font-weight: 550;
   }
   .container-aboutus .personal-text {
@@ -2115,7 +2115,7 @@ nav ul {
     font-size: 1rem;
   }
   .container-aboutus .personal-heading .personal-heading__h2 .personal-heading__h2__span {
-    color: #4a4a4a;
+    color: #212121;
     font-weight: 550;
   }
   .container-aboutus .personal-text {
@@ -2215,7 +2215,7 @@ section {
 
 .project-ul__li {
   position: relative;
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 1px solid #212121;
   cursor: pointer;
   padding-top: 7%;
   font-size: 2.5vw;
@@ -2227,11 +2227,11 @@ section {
 
 .project-ul__li a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: #212121;
 }
 
 .project-ul__li a:hover {
-  color: #4a4a4a;
+  color: #212121;
 }
 
 .project-image {
@@ -2261,7 +2261,7 @@ section {
           flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-color: #4a4a4a;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -2271,7 +2271,7 @@ section {
 }
 
 .section-theree .marcas .marcas__h2 {
-  color: white;
+  color: #212121;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
@@ -2295,7 +2295,7 @@ section {
       grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 20%;
   grid-row-gap: 20%;
-  color: white;
+  color: #212121;
 }
 
 .section-theree .marcas-container-1 {
@@ -2442,6 +2442,7 @@ section {
 }
 
 #sectionFour {
+  background-color: #101010;
   height: 150vh;
   width: 100%;
   display: -ms-grid;
@@ -2496,6 +2497,8 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
   text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
 }
 
 .s4__heading-h2 {
@@ -2537,7 +2540,7 @@ section {
 }
 
 .evento__item__caption-content {
-  color: #4a4a4a;
+  color: #212121;
   margin: auto 2rem 2rem;
 }
 
@@ -2553,7 +2556,7 @@ section {
 .evento__item__caption-content-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #4a4a4a;
+  color: #212121;
   font-size: 1rem;
 }
 
@@ -2743,7 +2746,7 @@ section {
   .evento__item__caption-content-text {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #4a4a4a;
+    color: #212121;
     font-size: .7rem;
   }
 }
@@ -2768,7 +2771,7 @@ section {
   .evento__item__caption-content-text {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #4a4a4a;
+    color: #212121;
     font-size: .5rem;
   }
 }
@@ -2789,7 +2792,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #4a4a4a;
+  background-color: #101010;
   color: white;
   padding: 0%;
   margin: auto;
@@ -2885,7 +2888,7 @@ section {
   font-family: "Montserrat", sans-serif;
   color: white;
   padding: 10px;
-  background-color: #4a4a4a;
+  background-color: #101010;
   border-radius: 50%;
   border: solid white 1px;
 }

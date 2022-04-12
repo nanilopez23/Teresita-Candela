@@ -28,7 +28,7 @@ body{
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: $black;
+    background-color: $black2;
     transition: 1s;
     .logo-header{
         position: absolute;
@@ -1656,13 +1656,13 @@ canvas {
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background-color: $black;
+    background-color: $white;
     margin: 0;
     padding: 0;
     .marcas{
         margin: 3% 0%;
         .marcas__h2{
-            color: $white;
+            color: $black;
             text-transform: uppercase;
             font-family: $fontPrimary;
             font-size: 2.5rem;
@@ -1682,7 +1682,7 @@ canvas {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 20%;
         grid-row-gap: 20%;
-        color: $white;
+        color: $black;
     }
     .marcas-container-1{
         grid-area: 1 / 1 / 2 / 2;
@@ -1775,6 +1775,7 @@ canvas {
 }
 
 #sectionFour {
+    background-color: $black2;
     height: 150vh;
     width: 100%;
     display: grid;
@@ -1806,12 +1807,15 @@ canvas {
     padding-top: 40px;
     padding-bottom: 40px;
     text-transform: uppercase;
+    color: $white;
+    font-size: 3rem;
 }
 .s4__heading-h2{
     font-family: $fontPrimary;
     font-weight: bold;
     padding-top: 40px;
     text-transform: uppercase;
+    
 }
 @media screen and (max-width:768px){
     .s4__heading-h2{
@@ -2022,7 +2026,7 @@ height: 100%;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: $black;
+        background-color: $black2;
         color: $white;
         padding: 0% ;
         margin:auto;
@@ -2088,7 +2092,7 @@ height: 100%;
             font-family: $fontPrimary;
             color: white;
             padding: 10px;
-            background-color: $black;
+            background-color: $black2;
             border-radius: 50%;
             border: solid white 1px;
             a{
