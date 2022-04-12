@@ -1392,7 +1392,7 @@ nav ul {
     transition: 400ms ease-in-out;
   }
   .container-values .design-1 .design-1__h3 {
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .container-values .design-1 .design-1__p {
     width: 100%;
@@ -1400,9 +1400,9 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .7rem;
+    font-size: .6rem;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1428,7 +1428,7 @@ nav ul {
     transition: 400ms ease-in-out;
   }
   .container-values .design-2 .design-2__h3 {
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .container-values .design-2 .design-2__p {
     width: 100%;
@@ -1436,9 +1436,9 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .7rem;
+    font-size: .6rem;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1465,7 +1465,7 @@ nav ul {
     transition: 400ms ease-in-out;
   }
   .container-values .design-3 .design-3__h3 {
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .container-values .design-3 .design-3__p {
     width: 100%;
@@ -1473,9 +1473,9 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .7rem;
+    font-size: .6rem;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1557,7 +1557,7 @@ nav ul {
     transition: 400ms ease-in-out;
   }
   .container-values .design-1 .design-1__h3 {
-    font-size: .8rem;
+    font-size: .7rem;
   }
   .container-values .design-1 .design-1__p {
     width: 100%;
@@ -1565,9 +1565,9 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .6rem;
+    font-size: .5rem;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1593,7 +1593,7 @@ nav ul {
     transition: 400ms ease-in-out;
   }
   .container-values .design-2 .design-2__h3 {
-    font-size: .8rem;
+    font-size: .7rem;
   }
   .container-values .design-2 .design-2__p {
     width: 100%;
@@ -1601,7 +1601,7 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .5rem;
     font-weight: 400;
@@ -1630,7 +1630,7 @@ nav ul {
     transition: 400ms ease-in-out;
   }
   .container-values .design-3 .design-3__h3 {
-    font-size: .8rem;
+    font-size: .7rem;
   }
   .container-values .design-3 .design-3__p {
     width: 100%;
@@ -1638,7 +1638,7 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .5rem;
     font-weight: 400;
@@ -1732,7 +1732,7 @@ nav ul {
     bottom: 0;
     padding: 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .5rem;
+    font-size: .4rem;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1768,7 +1768,7 @@ nav ul {
     bottom: 0;
     padding: 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .5rem;
+    font-size: .4rem;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1805,7 +1805,7 @@ nav ul {
     bottom: 0;
     padding: 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .5rem;
+    font-size: .4rem;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1847,7 +1847,7 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .5rem;
     font-weight: 400;
@@ -1883,7 +1883,7 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .5rem;
     font-weight: 400;
@@ -1920,7 +1920,7 @@ nav ul {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .5rem;
     font-weight: 400;
